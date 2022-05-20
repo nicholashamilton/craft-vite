@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US" data-env="{{ craft.app.config.env }}">
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta charset="utf-8"/>
+        <title>CraftCMS Boilerplate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+        <meta name="referrer" content="origin-when-cross-origin"/>
+
+        {% if craft.app.config.env != "dev" %}
+            {{ craft.siteModule.getMainCSS()|raw }}
+        {% endif %}
+
+    </head>
+
+    <body>
+
+        <h1 class="text-3xl font-bold underline text-primary-color">
+            Hello world!
+        </h1>
+
+        <input-component web-component>
+            <label class="-hidden-label" for="input-component">Placeholder</label>
+            <input type="text" id="input-component" name="example" autocapitalize="off" autocomplete="off" placeholder="Placeholder" />
+        </input-component>
+
+        {{ craft.vite.script("src/app/app.ts") }}
+
+    </body>
+
+</html>

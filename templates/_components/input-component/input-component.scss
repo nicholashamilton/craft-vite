@@ -1,0 +1,111 @@
+input-component {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    &.has-icon {
+        input {
+            padding-left: 40px;
+        }
+    }
+
+    input {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-overflow: ellipsis;
+        line-height: 48px;
+        padding: 0 1rem;
+        background-color: var(--grey-100);
+        border: 1px solid var(--grey-300);
+        border-radius: 0.25rem;
+        color: var(--grey-900);
+        transition: all 150ms ease;
+        overflow: hidden;
+
+        &::placeholder {
+            font-size: 0.8rem;
+            color: var(--grey-900);
+            opacity: 0.4;
+            transition: all 0.25s ease;
+        }
+
+        &:focus,
+        &.has-value {
+            background-color: var(--grey-200);
+
+            &::placeholder {
+                opacity: 0;
+            }
+
+            & ~ label.-label-placeholder {
+                transform: translateY(-38px);
+                padding-left: 0;
+            }
+        }
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 0.8rem;
+        cursor: text;
+        user-select: none;
+        pointer-events: none;
+        transition: all 0.25s ease;
+        opacity: 0.4;
+
+        &.-hidden-label {
+            position: absolute;
+            height: 0;
+            width: 0;
+            pointer-events: none;
+            user-select: none;
+            opacity: 0;
+        }
+
+        &.-label-placeholder {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            padding-left: 1rem;
+        }
+
+        &.-label {
+            font-size: 1rem;
+            font-weight: var(--font-medium);
+            color: var(--grey-800);
+            opacity: 1;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    i {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        pointer-events: none;
+        position: absolute;
+        bottom: calc((48px - 24px) / 2);
+        left: 0.5rem;
+        color: var(--grey-700);
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    p.error {
+        display: none;
+        color: var(--danger-600);
+        position: absolute;
+        bottom: -20px;
+        font-size: 14px;
+    }
+}

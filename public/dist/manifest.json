@@ -1,0 +1,40 @@
+{
+  "src/app/app-legacy.ts": {
+    "file": "assets/app-legacy.d610901b.js",
+    "src": "src/app/app-legacy.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "templates/_components/input-component/input-component-legacy.ts",
+      "src/styles/main-legacy.scss"
+    ]
+  },
+  "src/styles/main-legacy.scss": {
+    "file": "assets/styles-legacy.81646420.js",
+    "src": "src/styles/main-legacy.scss",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "templates/_components/input-component/input-component-legacy.ts": {
+    "file": "assets/input-component-legacy.737a0e2a.js",
+    "src": "templates/_components/input-component/input-component-legacy.ts",
+    "isDynamicEntry": true
+  },
+  "vite/legacy-polyfills": {
+    "file": "assets/polyfills-legacy.f46c3208.js",
+    "src": "vite/legacy-polyfills",
+    "isEntry": true
+  },
+  "src/app/app.ts": {
+    "file": "assets/app.84e706ef.js",
+    "src": "src/app/app.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "templates/_components/input-component/input-component.ts"
+    ]
+  },
+  "templates/_components/input-component/input-component.ts": {
+    "file": "assets/input-component.f8b0c311.js",
+    "src": "templates/_components/input-component/input-component.ts",
+    "isDynamicEntry": true
+  }
+}
