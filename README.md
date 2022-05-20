@@ -6,7 +6,16 @@
 - [x] Tailwind & SCSS
 - [x] Web Component Auto Loader
 
-#### Auto Load Web Component's
+#### Running on Dev
+1. Update `.env` `CRAFT_ENVIRONMENT` to `dev`
+2. `npm run dev`
+
+#### Previewing Production on Local
+1. Update `.env` `CRAFT_ENVIRONMENT` to `production`
+2. Run `npm run build`
+3. Go to the `host` URL on local web server.
+
+#### Auto Loading Web Component's
 
 1. Create your custom element with the web-component `attribute`.
 ```html
