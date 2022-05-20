@@ -11,7 +11,7 @@
         <meta name="referrer" content="origin-when-cross-origin"/>
 
         {% if craft.app.config.env != "dev" %}
-            {% cache %}
+            {% cache using key "mainCSS" %}
                 {{ craft.siteModule.getMainCSS()|raw }}
             {% endcache %}
         {% endif %}

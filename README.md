@@ -13,7 +13,7 @@
 2. `npm run dev`
 
 #### Previewing Production on Local
-1. Update `.env` `CRAFT_ENVIRONMENT` to `production`
+1. Update `.env` `CRAFT_ENVIRONMENT` to `production` or `staging`
 2. Run `npm run build`
 3. Go to the `host` URL on local web server.
 
@@ -41,3 +41,6 @@ export default class CustomElement extends HTMLElement {
 #### Creating new SCSS files
 * Create `SCSS` files anywhere in `src/styles` and `templates`.
 * `@import` `SCSS` files into the `src/styles/main.scss` and use Tailwind throughout the templates.
+
+#### Post Deployment Scripts
+1. Clear CSS cache by running `php craft cache/flush mainCSS`

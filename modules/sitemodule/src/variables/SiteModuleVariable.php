@@ -24,9 +24,9 @@ class SiteModuleVariable
     public function getMainCSS() {
         $cssFilePaths = glob(CRAFT_BASE_PATH . "/public/dist/assets/*.css");
 
-        foreach ($cssFilePaths as $key => $cssPath) {
+        foreach ($cssFilePaths as $cssPath) {
             if (str_contains($cssPath, "styles.")) {
-                $cssHref = "/dist/assets/" . basename($cssPath);
+                $cssHref =  "/dist/assets/" . basename($cssPath);
 
                 return "
                     <link rel='preload' href='$cssHref' as='style'>
