@@ -14,7 +14,7 @@
 <custom-element web-component></custom-element>
 ```
 
-2. Create a corresponding `.ts` file for the Web Component and export the default class.
+2. Create a corresponding `custom-element.ts` file for the Web Component and export the default class.
 ```ts
 export default class CustomElement extends HTMLElement {
     constructor() {
