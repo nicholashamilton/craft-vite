@@ -16,14 +16,24 @@
 
     <body>
 
-        <h1 class="text-3xl font-bold underline text-primary-color">
-            Hello world!
-        </h1>
+        <section class="block p-4">
 
-        <input-component web-component>
-            <label class="-hidden-label" for="input-component">Placeholder</label>
-            <input type="text" id="input-component" name="example" autocapitalize="off" autocomplete="off" placeholder="Placeholder" />
-        </input-component>
+            <h1 class="text-3xl font-bold underline text-primary-color mb-4">
+                Hello world!
+            </h1>
+
+            <div class="block border rounded shadow p-4">
+                {{ include("_components/input-component", {
+                    id: "input-component",
+                    label: "Placeholder",
+                    placeholder: "Placeholder",
+                    hideLabel: false,
+                    name: "name",
+                    type: "text",
+                }) }}
+            </div>
+
+        </section>
 
         {{ craft.vite.script("src/app/app.ts") }}
 
