@@ -1,12 +1,12 @@
-dateModified: 1653011057
+dateModified: 1653021752
 email:
   fromEmail: nicholashamilton.co@gmail.com
   fromName: 'Headless Next'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    6a569bef-febb-4b6b-857f-97a1358759b1: 'Headless Next' # Headless Next
-    19a16f46-bb2d-43e5-ae2c-967059d41288: 'Headless Next' # Headless Next
+    6a569bef-febb-4b6b-857f-97a1358759b1: 'Craft Boiler' # Craft Boiler
+    19a16f46-bb2d-43e5-ae2c-967059d41288: 'Craft Boiler' # Headless Next
     60bf332d-1f89-495c-94d8-b8efb637840e: 'Page Builder' # Page Builder
     92347230-7cd7-459c-95c6-f5797f9f01f8: Default # Default
     be626170-6d2a-4baf-9f4e-b9b062fc0092: Pages # Pages

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US" data-env="{{ craft.app.config.env }}">
-
+<html
+    lang="en-US"
+    data-env="{{ craft.app.config.env }}"
+>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta charset="utf-8"/>
@@ -9,7 +11,9 @@
         <meta name="referrer" content="origin-when-cross-origin"/>
 
         {% if craft.app.config.env != "dev" %}
-            {{ craft.siteModule.getMainCSS()|raw }}
+            {% cache %}
+                {{ craft.siteModule.getMainCSS()|raw }}
+            {% endcache %}
         {% endif %}
 
     </head>
