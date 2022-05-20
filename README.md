@@ -21,7 +21,6 @@
 
 1. Create your custom element with the web-component `attribute`.
 ```html
-<!-- Auto load Web Components in the /templates directory by tagging custom elements with the web-component attribute. -->
 <custom-element web-component></custom-element>
 ```
 
