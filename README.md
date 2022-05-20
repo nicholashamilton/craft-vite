@@ -1,10 +1,12 @@
 # CraftCMS-Boilerplate
 
-#### Boilerplate Features ⚡
+#### Roadmap
+- [x] CraftCMS 4
 - [x] Vite ⚡
-- [x] TypeScript
-- [x] Tailwind & SCSS
+- [x] TypeScript | ES Modules | Web Components
+- [x] Tailwind | SCSS
 - [x] Web Component Auto Loader
+- [ ] Dynamic Page Builder
 
 #### Running on Dev
 1. Update `.env` `CRAFT_ENVIRONMENT` to `dev`
@@ -35,3 +37,7 @@ export default class CustomElement extends HTMLElement {
     }
 }
 ```
+
+#### Creating new SCSS files
+* Create `SCSS` files anywhere in `src/styles` and `templates`.
+* `@import` `SCSS` files into the `src/styles/main.scss` and use Tailwind throughout the templates.
