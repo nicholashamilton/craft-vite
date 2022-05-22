@@ -1,6 +1,6 @@
 import ViteRestart from "vite-plugin-restart";
 // import "vite/dynamic-import-polyfill";
-import legacy from '@vitejs/plugin-legacy';
+import legacy from "@vitejs/plugin-legacy";
 
 // https://vitejs.dev/config/
 export default ({ command }) => ({
@@ -17,13 +17,10 @@ export default ({ command }) => ({
     },
     plugins: [
         legacy({
-            targets: ['defaults', 'not IE 11'],
+            targets: ["defaults", "not IE 11"],
         }),
         ViteRestart({
-            reload: [
-                "./src/**/*",
-                "./templates/**/*",
-            ],
+            reload: ["./src/**/*", "./templates/**/*"],
         }),
     ],
     server: {

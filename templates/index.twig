@@ -1,46 +1,24 @@
-<!DOCTYPE html>
-<html
-    lang="en-US"
-    data-env="{{ craft.app.config.env }}"
->
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta charset="utf-8"/>
-        <title>CraftCMS Boilerplate</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
-        <meta name="referrer" content="origin-when-cross-origin"/>
+{% extends '_layouts/page' %}
 
-        {% if craft.app.config.env != "dev" %}
-            {% cache using key "mainCSS" %}
-                {{ craft.siteModule.getMainCSS()|raw }}
-            {% endcache %}
-        {% endif %}
+{% block content %}
 
-    </head>
+    <section class="block p-4">
 
-    <body>
+        <h1 class="text-3xl font-bold underline text-primary-color mb-4">
+            Hello world!
+        </h1>
 
-        <section class="block p-4">
+        <div class="block border rounded shadow p-4">
+            {{ include("_components/input-component", {
+                id: "input-component",
+                label: "Placeholder",
+                placeholder: "Placeholder",
+                hideLabel: false,
+                name: "name",
+                type: "text",
+            }) }}
+        </div>
 
-            <h1 class="text-3xl font-bold underline text-primary-color mb-4">
-                Hello world!
-            </h1>
+    </section>
 
-            <div class="block border rounded shadow p-4">
-                {{ include("_components/input-component", {
-                    id: "input-component",
-                    label: "Placeholder",
-                    placeholder: "Placeholder",
-                    hideLabel: false,
-                    name: "name",
-                    type: "text",
-                }) }}
-            </div>
-
-        </section>
-
-        {{ craft.vite.script("src/app/app.ts") }}
-
-    </body>
-
-</html>
+{% endblock %}

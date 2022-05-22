@@ -1,9 +1,9 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     content: [
-      "./src/**/*.{vue,js,ts,jsx,tsx}",
-      "./templates/**/*.{vue,js,ts,jsx,tsx,twig}",
+        "./src/**/*.{vue,js,ts,jsx,tsx}",
+        "./templates/**/*.{vue,js,ts,jsx,tsx,twig}",
     ],
     theme: {
         fontFamily: {
@@ -29,4 +29,4 @@ module.exports = {
         require("autoprefixer"),
         require("@tailwindcss/aspect-ratio"),
     ],
-  }
+};
