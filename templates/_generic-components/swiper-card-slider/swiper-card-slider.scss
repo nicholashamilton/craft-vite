@@ -1,0 +1,135 @@
+swiper-card-slider.swiper {
+    display: block;
+    padding: 1rem;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            display: inline-block;
+            cursor: grab;
+
+            &:active,
+            &:focus {
+                cursor: grabbing;
+            }
+
+            .cta-card {
+                display: inline-block;
+                width: 100%;
+                background-color: var(--white);
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+                border-radius: 6px;
+                overflow: hidden;
+
+                .image-shim {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 175px;
+                    overflow: hidden;
+                    pointer-events: none;
+                    user-select: none;
+
+                    img {
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .call-to-action {
+                    display: block;
+                    padding: 1rem;
+
+                    h3 {
+                        display: block;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        display: block;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        margin-top: 0.25rem;
+                    }
+
+                    button.shiny-button {
+                        position: relative;
+                        display: block;
+                        color: var(--white);
+                        background-color: var(--primary-color);
+                        border-radius: 4px;
+                        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.06);
+                        overflow: hidden;
+                        padding: 0.5rem 0.5rem;
+                        font-size: 14px;
+                        transition: all 200ms ease;
+                        margin-top: .75rem;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: -200%;
+                            width: 200%;
+                            height: 100%;
+                            transform: skewX(-20deg);
+                            background-image: linear-gradient(
+                                to right,
+                                transparent,
+                                rgba(255, 255, 255, 0.3),
+                                transparent
+                            );
+                        }
+
+                        &:hover {
+                            &:after {
+                                animation: shine 1.6s ease;
+                            }
+                        }
+
+                        &:active,
+                        &:focus {
+                            transform: translateY(1px);
+                            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+
+        &.swiper-pagination-lock {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+            background: var(--grey-300);
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0.5rem 0.25rem;
+            transition: background-color 300ms ease;
+
+            &-active {
+                background: var(--primary-color);
+            }
+        }
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 200%;
+    }
+}

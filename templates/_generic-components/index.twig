@@ -1,0 +1,13 @@
+{% extends '_layouts/page' %}
+
+{% set segments = craft.app.request.getSegments() %}
+
+{% block content %}
+
+    {% if segments|length > 1 %}
+        {% set componentSlug = segments[1] %}
+        {% set componentInclude = segments|join("/") %}
+        {% include "_generic-" ~ componentInclude ignore missing %}
+    {% endif %}
+
+{% endblock %}

@@ -12,7 +12,9 @@
 <input-component web-component>
     <label
         class="{{ hideLabel is defined and hideLabel ? "-hidden-label" : "" }}"
-        for="{{ id }}">{{ label }}
+        for="{{ id }}"
+    >
+        {{ label }}
     </label>
     <input
         id="{{ id }}"

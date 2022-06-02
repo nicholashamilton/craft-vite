@@ -1,0 +1,46 @@
+button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+button.shiny-button {
+    position: relative;
+    display: block;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(#000,.2);
+    overflow: hidden;
+    padding: 12px 20px;
+    transition: all 200ms ease;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -200%;
+        width: 200%;
+        height: 100%;
+        transform: skewX(-20deg);
+        background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, .3), transparent);
+    }
+
+    &:hover {
+        &:after {
+            animation: shine 1.6s ease;
+        }
+    }
+
+    &:active, &:focus {
+        transform: translateY(1px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 200%;
+    }
+}

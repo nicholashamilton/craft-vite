@@ -1,0 +1,19 @@
+button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+button.solid-button {
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    padding: 12px 20px;
+    color: var(--white);
+    transition: background-color 300ms ease;
+
+    &:hover, &:active, &:focus {
+        background-color: var(--primary-color-hover);
+    }
+}

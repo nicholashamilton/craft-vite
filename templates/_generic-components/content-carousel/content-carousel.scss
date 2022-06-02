@@ -1,0 +1,187 @@
+content-carousel {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 11px 25px rgba(0, 0, 0, .1);
+    
+    carousel-container {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 550px;
+        overflow: hidden;
+
+        carousel-slide {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--light-grey);
+            transition: transform 400ms ease;
+
+            gradient-shim {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 50%;
+                width: 100%;
+                opacity: .95;
+                z-index: 2;
+
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,1+100 */
+                background: -moz-linear-gradient(top,  transparent 0%, rgba(0,0,0,.8) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  transparent 0%,rgba(0,0,0,.8) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  transparent 0%,rgba(0,0,0,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                pointer-events: none;
+                user-select: none;
+                z-index: 1;
+            }
+
+            slide-content {
+                display: inline-block;
+                width: 100%;
+                max-width: 600px;
+                height: auto;
+                text-align: center;
+                padding: 2rem;
+                z-index: 3;
+
+                h4, h5, hr, a {
+                    opacity: 0;
+                    animation: SlideIn 300ms ease forwards;
+                }
+
+                h4, h5 {
+                    color: var(--white);
+                    text-shadow: 0 3px 6px rgba(0, 0, 0, .95);
+                    line-height: 1.2;
+                    padding: 0 1rem;
+                }
+
+                h4 {
+                    font-size: 28px;
+                    animation-delay: 300ms;
+                }
+
+                hr {
+                    display: block;
+                    height: 2px;
+                    background: var(--white);
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, .95);
+                    width: 90%;
+                    max-width: 350px;
+                    margin: 1rem auto;
+                    animation-delay: 350ms;
+                }
+
+                h5 {
+                    font-family: var(--font-sans-serif-paragraph);
+                    font-weight: var(--font-normal);
+                    font-size: 20px;
+                    animation-delay: 400ms;
+                }
+
+                a {
+                    display: table;
+                    margin: auto;
+                    margin-top: 1rem;
+                    animation-delay: 450ms;
+                    background-color: transparent;
+                    border: 2px solid var(--white);
+                    border-radius: 6px;
+                    padding: 12px 20px;
+                    color: var(--white);
+                    transition: background-color 300ms ease;
+                    
+                    &:hover, &:active, &:focus {
+                        background-color: var(--white);
+                        color: var(--dark-grey);
+                    }
+                }
+            }
+        }
+    }
+
+    carousel-controls {
+        display: flex;
+        flex-direction: revert;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+        opacity: 0;
+        animation: FadeIn 400ms ease-in forwards;
+        animation-delay: 400ms;
+
+        button {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: transform 300ms ease;
+
+            &.prev {
+                transform: rotate(-180deg);
+            }
+
+            &:hover, &:focus {
+                transform: scale(.9);
+
+                &.prev {
+                    transform: rotate(-180deg) scale(.9);
+                }
+                svg {
+                    .svg-fill-path {
+                        fill: var(--white);
+                    }
+                }
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+
+                .svg-fill-path {
+                    fill: var(--white);
+                    transition: fill 300ms ease;
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes SlideIn {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

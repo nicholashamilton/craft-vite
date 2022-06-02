@@ -5,5 +5,5 @@ hasUrls: true
 language: en-US
 name: 'Craft Boiler'
 primary: true
-siteGroup: 19a16f46-bb2d-43e5-ae2c-967059d41288 # Headless Next
+siteGroup: 19a16f46-bb2d-43e5-ae2c-967059d41288 # Craft Boiler
 sortOrder: 1

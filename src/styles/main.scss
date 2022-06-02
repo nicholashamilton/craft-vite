@@ -2,8 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-// Globals
+// Variables
 @import "./variables.scss";
 
-// Components
-@import "../../templates/_components/input-component/input-component.scss";
+// Global Components
+@import "../../templates/_generic-components/generic-components.scss";

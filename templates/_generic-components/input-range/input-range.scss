@@ -1,0 +1,198 @@
+$ease-in: cubic-bezier(0.47, 0.16, 0.5, 1.5);
+
+.range-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 300px;
+}
+
+input-range {
+    display: block;
+    width: 100%;
+
+    p {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: var(--font-xs);
+        color: var(--grey-700);
+        line-height: 1.375;
+    }
+
+    #range-marker {
+        display: block;
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+        transition: all 250ms ease;
+        transform: scale(1) translate(0, 0);
+        pointer-events: none;
+        user-select: none;
+        z-index: 2;
+
+        .blobs {
+            filter: url("#goo");
+            top: 0;
+            left: 0;
+            height: 150px;
+            width: 80px;
+            transform: translate(-40px, calc(-100% + 78px));
+
+            .blob {
+                position: absolute;
+                background: var(--primary-color);
+                left: 50%;
+                top: 50%;
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                color: var(--white);
+                border-radius: 100%;
+                margin-top: -11px;
+                margin-left: -11px;
+                font-size: 60%;
+                animation: bottomBlobReverse $ease-in 300ms backwards;
+
+                &:first-child {
+                    z-index: 2;
+                }
+
+                &:last-child {
+                    z-index: 1;
+                    animation: topBlobReverse $ease-in 300ms backwards;
+                }
+            }
+        }
+
+        &.is-active {
+            .blobs .blob {
+                animation: bottomBlob $ease-in 300ms forwards;
+
+                &:last-child {
+                    animation: topBlob $ease-in 300ms forwards;
+                }
+            }
+        }
+
+        svg {
+            position: absolute;
+            height: 72px;
+            transform: translate(-18px, -8px);
+        }
+
+        span {
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 600;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            border-radius: 50%;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 16px solid var(--primary-color);
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                top: 100%;
+                left: 50%;
+                margin-left: -16px;
+                margin-top: -11px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 10px;
+                top: 100%;
+                left: calc(50% - 2px);
+                background-color: var(--primary-color);
+            }
+        }
+    }
+
+    .field {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    input[type="range"].slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 6px;
+        border-radius: 5px;
+        background-color: var(--grey-400);
+        outline: none;
+        opacity: .7;
+        transition: all 250ms ease;
+
+        &::-webkit-slider-thumb {
+            opacity: 0;
+        }
+
+        &::-webkit-slider-thumb,
+        &::-moz-range-thumb {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            cursor: pointer;
+            opacity: 0;
+            border: none;
+        }
+    }
+}
+
+@keyframes bottomBlob {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+@keyframes topBlob {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1.8) translate(0, -22px);
+    }
+}
+
+@keyframes bottomBlobReverse {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+@keyframes topBlobReverse {
+    0% {
+        transform: scale(1.8) translate(0, -22px);
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}

@@ -1,0 +1,50 @@
+<content-carousel web-component loading="eager">
+    <carousel-container>
+        <carousel-slide style="transform:trasnlate3d(0, 0, 0); display:flex;">
+            <img 
+                src="/assets/images/night-city.jpg" 
+                srcset="" 
+                width="320"
+                loading="lazy"
+                alt=""
+                style="object-position: 'cover';"
+            />
+            <gradient-shim></gradient-shim>
+            <slide-content>
+                <h4 class="g-font -bold">Example of headline</h4>
+                <hr/>
+                <h5>Example of subheadline</h5>
+                <a href="" target="">Example Link</a>
+            </slide-content>
+        </carousel-slide>
+        <carousel-slide style="transform:trasnlate3d(100%, 0, 0); display:none;">
+            <img 
+                src="/assets/images/ocean.jpg" 
+                srcset="" 
+                width="320"
+                loading="lazy"
+                alt=""
+                style="object-position: 'cover';"
+            />
+            <gradient-shim></gradient-shim>
+            <slide-content>
+                <h4 class="g-font -bold">Example of headline 2</h4>
+                <hr/>
+                <h5>Example of subheadline 2</h5>
+                <a href="" target="">Example Link 2</a>
+            </slide-content>
+        </carousel-slide>
+    </carousel-container>
+    <carousel-controls>
+        <button class="control prev" control-direction="-1" type="button" aria-label="Previous slide button">
+            <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="m1.25 4c0-1.51878 1.23122-2.75 2.75-2.75h16c1.5188 0 2.75 1.23122 2.75 2.75v16c0 1.5188-1.2312 2.75-2.75 2.75h-16c-1.51878 0-2.75-1.2312-2.75-2.75zm9.2803 2.46967c-.2929-.29289-.76774-.29289-1.06063 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76773.2929 1.06063 0l5-5c.2929-.2929.2929-.7677 0-1.0606z" fill="rgb(0,0,0)" fill-rule="evenodd" />
+            </svg>
+        </button>
+        <button class="control next" control-direction="1" type="button" aria-label="Next slide button">
+            <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="m1.25 4c0-1.51878 1.23122-2.75 2.75-2.75h16c1.5188 0 2.75 1.23122 2.75 2.75v16c0 1.5188-1.2312 2.75-2.75 2.75h-16c-1.51878 0-2.75-1.2312-2.75-2.75zm9.2803 2.46967c-.2929-.29289-.76774-.29289-1.06063 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76773.2929 1.06063 0l5-5c.2929-.2929.2929-.7677 0-1.0606z" fill="rgb(0,0,0)" fill-rule="evenodd" />
+            </svg>
+        </button>
+    </carousel-controls>
+</content-carousel>

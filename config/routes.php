@@ -19,5 +19,5 @@
  */
 
 return [
-
+    "components/<component:[\w-]+>" => ["template" => "_generic-components/index.twig"],
 ];
