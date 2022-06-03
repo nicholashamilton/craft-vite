@@ -1,0 +1,26 @@
+{#
+    {
+        label: string,
+        name: string,
+        id: string,
+        value?: string,
+        checked?: boolean,
+    }
+#}
+
+<radio-component>
+    <input
+        type="radio"
+        name="{{ name }}"
+        id="{{ id }}"
+        tabindex="0"
+        value="{{ value ?? "" }}"
+        {% if checked is defined and checked %}
+            checked
+        {% endif %}
+    />
+    <label for="{{ id }}">
+        <i></i>
+        <span>{{ label }}</span>
+    </label>
+</radio-component>

@@ -54,6 +54,36 @@
             }) }}
         </div>
 
+        <div class="block border rounded shadow p-4 mt-6">
+            {{ include("_generic-components/checkbox/index.twig", {
+                label: "Test",
+                name: "checkbox[]",
+                id: "test-checkbox-1",
+                value: "1",
+            }) }}
+            {{ include("_generic-components/checkbox/index.twig", {
+                label: "Test 2",
+                name: "checkbox[]",
+                id: "test-checkbox-2",
+                value: "2",
+            }) }}
+        </div>
+
+        <div class="block border rounded shadow p-4 mt-6">
+            {{ include("_generic-components/radio/index.twig", {
+                label: "Test",
+                name: "radio[]",
+                id: "test-radio-1",
+                value: "1",
+            }) }}
+            {{ include("_generic-components/radio/index.twig", {
+                label: "Test 2",
+                name: "radio[]",
+                id: "test-radio-2",
+                value: "2",
+            }) }}
+        </div>
+
     </section>
 
 {% endblock %}
