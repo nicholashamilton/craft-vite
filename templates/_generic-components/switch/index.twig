@@ -1,0 +1,27 @@
+
+{#
+    {
+        label: string,
+        id: string,
+        name: string,
+        checked?: boolean,
+        value?: string,
+    }
+#}
+
+<lightswitch-component>
+    <input
+        type="checkbox"
+        name="{{ name }}"
+        id="{{ id }}"
+        value="{{ value ?? "" }}"
+        {% if checked is defined and checked %}
+            checked
+        {% endif %}
+        
+    />
+    <label for="{{ id }}">
+        <i></i>
+        <span>{{ label }}</span>
+    </label>
+</lightswitch-component>

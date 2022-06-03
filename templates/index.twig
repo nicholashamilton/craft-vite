@@ -10,32 +10,32 @@
 
         <div class="block border rounded shadow p-4">
             {{ include("_generic-components/input-component/index.twig", {
-                id: "input-component",
+                id: "input-component-1",
                 label: "Placeholder",
                 placeholder: "Placeholder",
                 hideLabel: false,
-                name: "name",
+                name: "name1",
                 type: "text",
             }) }}
         </div>
 
         <div class="block border rounded shadow p-4 mt-6">
             {{ include("_generic-components/input-component/index.twig", {
-                id: "input-component",
+                id: "input-component-2",
                 label: "Placeholder",
                 placeholder: "Placeholder",
                 hideLabel: true,
-                name: "name",
+                name: "name2",
                 type: "text",
             }) }}
         </div>
 
         <div class="block border rounded shadow p-4 pt-8 mt-6">
             {{ include("_generic-components/input-component/index.twig", {
-                id: "input-component",
+                id: "input-component-3",
                 label: "This Placeholder Animates!",
                 useLabelAsPlaceholder: true,
-                name: "name",
+                name: "name3",
                 type: "text",
             }) }}
         </div>
@@ -50,6 +50,12 @@
                 label: "Small",
                 isRounded: true,
                 size: "-small",
+                class: "mr-2 mt-2",
+            }) }}
+            {{ include("_generic-components/button/index.twig", {
+                label: "Shine",
+                isRounded: true,
+                theme: "-shine",
                 class: "mr-2 mt-2",
             }) }}
         </div>
@@ -82,6 +88,38 @@
                 id: "test-radio-2",
                 value: "2",
             }) }}
+        </div>
+
+        <div class="block border rounded shadow p-4 mt-6">
+            {{ include("_generic-components/textarea/index.twig", {
+                id: "textarea-1",
+                label: "Textarea",
+                placeholder: "Placeholder",
+            }) }}
+            <div class="block mt-4">
+                {{ include("_generic-components/textarea/index.twig", {
+                    id: "textarea-2",
+                    label: "Textarea",
+                    hiddenLabel: true,
+                    placeholder: "Placeholder",
+                }) }}
+            </div>
+        </div>
+
+        <div class="block border rounded shadow p-4 mt-6">
+            {{ include("_generic-components/switch/index.twig", {
+                id: "switch",
+                label: "Switch",
+                name: "switch1",
+                checked: true,
+            }) }}
+            <div class="block mt-4">
+                {{ include("_generic-components/switch/index.twig", {
+                    id: "switch2",
+                    label: "Switch",
+                    name: "switch2",
+                }) }}
+            </div>
         </div>
 
     </section>

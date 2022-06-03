@@ -1,0 +1,23 @@
+
+{#
+    {
+        label: string,
+        id: string,
+        rows?: number,
+        hiddenLabel?: boolean,
+        placeholder?: string,
+    }
+#}
+
+{% set hiddenLabelClass = hiddenLabel is defined and hiddenLabel ? "-hidden-label" : "-label" %}
+
+<textarea-component web-component class="u-margin-bottom-x2">
+    <label class="{{ hiddenLabelClass }}" for="{{ id }}">
+        {{ label }}
+    </label>
+    <textarea
+        id="{{ id }}"
+        rows="{{ rows ?? "5" }}"
+        placeholder="{{ placeholder ?? "" }}"
+    ></textarea>
+</textarea-component>

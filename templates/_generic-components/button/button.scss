@@ -5,6 +5,16 @@
     font-size: 1rem;
     transition: background-color 300ms ease;
 
+    &.-rounded {
+        border-radius: 6px;
+    }
+
+    &.-small {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Theme Start */
     &.-primary {
         background-color: var(--primary-color);
 
@@ -15,12 +25,49 @@
         }
     }
 
-    &.-rounded {
+    &.-shine {
+        position: relative;
+        color: var(--white);
+        background-color: var(--primary-color);
         border-radius: 6px;
-    }
+        box-shadow: 0 8px 32px rgba(#000, 0.2);
+        overflow: hidden;
+        padding: 12px 20px;
+        transition: all 200ms ease;
 
-    &.-small {
-        font-size: .8rem;
-        padding: .5rem .75rem;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -200%;
+            width: 200%;
+            height: 100%;
+            transform: skewX(-20deg);
+            background-image: linear-gradient(
+                to right,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+        }
+
+        &:hover {
+            &:after {
+                animation: ButtonShine 1.6s ease;
+            }
+        }
+
+        &:active,
+        &:focus {
+            transform: translateY(1px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+    }
+    /* Theme End */
+}
+
+@keyframes ButtonShine {
+    100% {
+        left: 200%;
     }
 }
