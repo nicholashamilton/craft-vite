@@ -1,5 +1,17 @@
 /.env
 /.idea
 /vendor
-.DS_Store
 node_modules
+.cache
+.DS_Store
+.vscode
+
+# Public
+/public/cpresources
+/public/dist
+/public/imager
+
+# Storage
+!/storage/
+/storage/*
+!/storage/rebrand/
