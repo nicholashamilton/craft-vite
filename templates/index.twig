@@ -19,6 +19,41 @@
             }) }}
         </div>
 
+        <div class="block border rounded shadow p-4 mt-6">
+            {{ include("_generic-components/input-component/index.twig", {
+                id: "input-component",
+                label: "Placeholder",
+                placeholder: "Placeholder",
+                hideLabel: true,
+                name: "name",
+                type: "text",
+            }) }}
+        </div>
+
+        <div class="block border rounded shadow p-4 pt-8 mt-6">
+            {{ include("_generic-components/input-component/index.twig", {
+                id: "input-component",
+                label: "This Placeholder Animates!",
+                useLabelAsPlaceholder: true,
+                name: "name",
+                type: "text",
+            }) }}
+        </div>
+
+        <div class="block border rounded shadow p-4 mt-6">
+            {{ include("_generic-components/button/index.twig", {
+                label: "Medium",
+                isRounded: true,
+                class: "mr-2 mt-2",
+            }) }}
+            {{ include("_generic-components/button/index.twig", {
+                label: "Small",
+                isRounded: true,
+                size: "-small",
+                class: "mr-2 mt-2",
+            }) }}
+        </div>
+
     </section>
 
 {% endblock %}

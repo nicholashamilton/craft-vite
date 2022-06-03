@@ -1,0 +1,21 @@
+{#
+    {
+        label: string;
+        class?: string;
+        isRounded?: boolean;
+        theme?: "-primary";
+        type?: "button" | "submit";
+        size?: "-normal" | "-small";
+    }
+#}
+
+{% set theme = theme ?? "-primary" %}
+{% set isRounded = isRounded is defined and isRounded ? "-rounded" : "" %}
+
+<button
+    class="button {{ theme }} {{ isRounded }} {{ class ?? "" }} {{ size ?? "" }}"
+    type="{{ type ?? "button" }}"
+    aria-label="{{ label ?? "" }}"
+>
+    {{ label ?? "More Details" }}
+</button>

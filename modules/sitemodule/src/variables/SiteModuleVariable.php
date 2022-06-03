@@ -21,7 +21,7 @@ use Craft;
  */
 class SiteModuleVariable
 {
-    public function getMainCSS() {
+    public function getCachedMainCSS() {
         $cssFilePaths = glob(CRAFT_BASE_PATH . "/public/dist/assets/*.css");
 
         foreach ($cssFilePaths as $cssPath) {

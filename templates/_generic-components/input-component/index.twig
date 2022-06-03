@@ -2,20 +2,18 @@
     {
         id: string;
         label: string;
+        useLabelAsPlaceholder?: boolean;
         name: "text";
         type?: "text" | "email" | "tel" | "url";
-        hideLabel?: boolean;
         placeholder?: string;
+        hideLabel?: boolean;
     }
 #}
 
+{% set hideLabelClass = hideLabel is defined and hideLabel ? "-hidden-label" : "" %}
+{% set labelAsPlaceholderClass = useLabelAsPlaceholder is defined and useLabelAsPlaceholder ? "-label-placeholder" : "" %}
+
 <input-component web-component>
-    <label
-        class="{{ hideLabel is defined and hideLabel ? "-hidden-label" : "" }}"
-        for="{{ id }}"
-    >
-        {{ label }}
-    </label>
     <input
         id="{{ id }}"
         name="{{ name }}"
@@ -24,4 +22,10 @@
         autocapitalize="off"
         autocomplete="off"
     />
+    <label
+        class="{{ hideLabelClass }} {{ labelAsPlaceholderClass }}"
+        for="{{ id }}"
+    >
+        {{ label }}
+    </label>
 </input-component>

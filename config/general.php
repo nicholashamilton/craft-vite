@@ -19,6 +19,7 @@ return [
     'devMode' => $isDev,
     'allowAdminChanges' => $isDev,
     'disallowRobots' => !$isProd,
+    'enableTemplateCaching' => !$isDev,
     'aliases' => [
         '@web' => App::env("PRIMARY_SITE_URL"),
     ],

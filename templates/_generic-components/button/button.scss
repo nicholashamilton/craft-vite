@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    color: var(--white);
+    font-size: 1rem;
+    transition: background-color 300ms ease;
+
+    &.-primary {
+        background-color: var(--primary-color);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: var(--primary-color-hover);
+        }
+    }
+
+    &.-rounded {
+        border-radius: 6px;
+    }
+
+    &.-small {
+        font-size: .8rem;
+        padding: .5rem .75rem;
+    }
+}

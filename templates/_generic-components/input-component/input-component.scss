@@ -1,5 +1,6 @@
 input-component {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column-reverse;
     position: relative;
     width: 100%;
 
@@ -39,7 +40,7 @@ input-component {
             }
 
             & ~ label.-label-placeholder {
-                transform: translateY(-38px);
+                transform: translateY(-40px);
                 padding-left: 0;
             }
         }
@@ -56,6 +57,7 @@ input-component {
         pointer-events: none;
         transition: all 0.25s ease;
         opacity: 0.4;
+        margin-bottom: .45rem;
 
         &.-hidden-label {
             position: absolute;
