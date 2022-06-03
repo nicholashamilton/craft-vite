@@ -5,8 +5,8 @@ export default class LitComponent extends LitElement {
     @property({
         type: Number,
         hasChanged: (value?: number, oldValue?: number) => {
-          return value !== oldValue;
-        }
+            return value !== oldValue;
+        },
     })
     private _count: number = 0;
 

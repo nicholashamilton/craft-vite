@@ -18,6 +18,17 @@
 
     </head>
 
+    <style>
+        html[data-env="dev"] {
+            opacity: 0;
+            transition: opacity 150ms ease;
+            transition-delay: 150ms;
+        }
+        html[data-env="dev"].dev-css-loaded {
+            opacity: 1;
+        }
+    </style>
+
     <body>
 
         {% block page %}{% endblock %}
