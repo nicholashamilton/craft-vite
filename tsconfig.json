@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "useDefineForClassFields": true,
+        "useDefineForClassFields": false,
         "module": "ESNext",
         "lib": [
             "ESNext",
@@ -19,9 +19,10 @@
         "types": [
             "vite/client",
         ],
+        "experimentalDecorators": true,
     },
     "include": [
-        "./src",
-        "./templates"
+        "./src/**/*",
+        "./templates/**/*"
     ]
 }
