@@ -3,10 +3,7 @@ import { property } from 'lit/decorators.js';
 
 export default class LitComponent extends LitElement {
     @property({
-        type: Number,
-        hasChanged: (value?: number, oldValue?: number) => {
-            return value !== oldValue;
-        },
+        hasChanged: (value: number, oldValue: number) => value !== oldValue,
     })
     private _count: number = 0;
 
