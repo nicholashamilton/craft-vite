@@ -1,5 +1,4 @@
 import ViteRestart from "vite-plugin-restart";
-// import "vite/dynamic-import-polyfill";
 import legacy from "@vitejs/plugin-legacy";
 
 // https://vitejs.dev/config/

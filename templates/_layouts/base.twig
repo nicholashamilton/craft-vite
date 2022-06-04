@@ -2,6 +2,7 @@
 <html
     lang="en-US"
     data-env="{{ craft.app.config.env }}"
+    data-use-dev-server="{{ craft.vite.viteService.useDevServer }}"
 >
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -12,19 +13,19 @@
         <title>CraftCMS Boilerplate</title>
         <meta name="description" content="CraftCMS Boilerplate">
 
-        {% if craft.app.config.env != "dev" %}
+        {% if not craft.vite.viteService.useDevServer %}
             {{ craft.siteModule.getCachedMainCSS()|raw }}
         {% endif %}
 
     </head>
 
     <style>
-        html[data-env="dev"] {
+        html[data-use-dev-server="true"] {
             opacity: 0;
             transition: opacity 150ms ease;
             transition-delay: 150ms;
         }
-        html[data-env="dev"].dev-css-loaded {
+        html[data-use-dev-server="true"].dev-css-loaded {
             opacity: 1;
         }
     </style>

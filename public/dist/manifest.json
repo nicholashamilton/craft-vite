@@ -1,6 +1,6 @@
 {
   "src/app/app-legacy.ts": {
-    "file": "assets/app-legacy.20447c43.js",
+    "file": "assets/app-legacy.23e7e0be.js",
     "src": "src/app/app-legacy.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -16,6 +16,7 @@
       "templates/_generic-components/input-pin/input-pin-legacy.ts",
       "templates/_generic-components/input-range/input-range-legacy.ts",
       "templates/_generic-components/input-url/input-url-legacy.ts",
+      "templates/_generic-components/lit-component/lit-component-legacy.ts",
       "templates/_generic-components/select/select-component-legacy.ts",
       "templates/_generic-components/swiper-card-slider/swiper-card-slider-legacy.ts",
       "templates/_generic-components/textarea/textarea-component-legacy.ts",
@@ -30,12 +31,12 @@
     "isDynamicEntry": true
   },
   "templates/_generic-components/card-carousel/card-carousel-legacy.ts": {
-    "file": "assets/card-carousel-legacy.652a5cfb.js",
+    "file": "assets/card-carousel-legacy.25e45b72.js",
     "src": "templates/_generic-components/card-carousel/card-carousel-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/content-carousel/content-carousel-legacy.ts": {
-    "file": "assets/content-carousel-legacy.f4d802aa.js",
+    "file": "assets/content-carousel-legacy.b5bb1e0f.js",
     "src": "templates/_generic-components/content-carousel/content-carousel-legacy.ts",
     "isDynamicEntry": true
   },
@@ -45,77 +46,82 @@
     "isDynamicEntry": true
   },
   "templates/_generic-components/image-slider/image-slider-legacy.ts": {
-    "file": "assets/image-slider-legacy.83e053ef.js",
+    "file": "assets/image-slider-legacy.d8dc30f3.js",
     "src": "templates/_generic-components/image-slider/image-slider-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-component/input-component-legacy.ts": {
-    "file": "assets/input-component-legacy.2d61c1e7.js",
+    "file": "assets/input-component-legacy.7eaf2200.js",
     "src": "templates/_generic-components/input-component/input-component-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-date/input-date-legacy.ts": {
-    "file": "assets/input-date-legacy.4f971244.js",
+    "file": "assets/input-date-legacy.3bbafee9.js",
     "src": "templates/_generic-components/input-date/input-date-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-email/input-email-legacy.ts": {
-    "file": "assets/input-email-legacy.df1dcf83.js",
+    "file": "assets/input-email-legacy.fa418c80.js",
     "src": "templates/_generic-components/input-email/input-email-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-password/input-password-legacy.ts": {
-    "file": "assets/input-password-legacy.f28d72a4.js",
+    "file": "assets/input-password-legacy.8fb2daba.js",
     "src": "templates/_generic-components/input-password/input-password-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-phone/input-phone-legacy.ts": {
-    "file": "assets/input-phone-legacy.1dbfae63.js",
+    "file": "assets/input-phone-legacy.f174432e.js",
     "src": "templates/_generic-components/input-phone/input-phone-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-pin/input-pin-legacy.ts": {
-    "file": "assets/input-pin-legacy.385787fb.js",
+    "file": "assets/input-pin-legacy.7e19edb0.js",
     "src": "templates/_generic-components/input-pin/input-pin-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-range/input-range-legacy.ts": {
-    "file": "assets/input-range-legacy.7ed5f479.js",
+    "file": "assets/input-range-legacy.403c30fe.js",
     "src": "templates/_generic-components/input-range/input-range-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-url/input-url-legacy.ts": {
-    "file": "assets/input-url-legacy.7a51869b.js",
+    "file": "assets/input-url-legacy.5e95f2c4.js",
     "src": "templates/_generic-components/input-url/input-url-legacy.ts",
     "isDynamicEntry": true
   },
+  "templates/_generic-components/lit-component/lit-component-legacy.ts": {
+    "file": "assets/lit-component-legacy.fcb3ce9f.js",
+    "src": "templates/_generic-components/lit-component/lit-component-legacy.ts",
+    "isDynamicEntry": true
+  },
   "templates/_generic-components/select/select-component-legacy.ts": {
-    "file": "assets/select-component-legacy.a52fb6e7.js",
+    "file": "assets/select-component-legacy.972d8329.js",
     "src": "templates/_generic-components/select/select-component-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/swiper-card-slider/swiper-card-slider-legacy.ts": {
-    "file": "assets/swiper-card-slider-legacy.4d49d765.js",
+    "file": "assets/swiper-card-slider-legacy.b9c04c1e.js",
     "src": "templates/_generic-components/swiper-card-slider/swiper-card-slider-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/textarea/textarea-component-legacy.ts": {
-    "file": "assets/textarea-component-legacy.1b0dda5c.js",
+    "file": "assets/textarea-component-legacy.9e9fb84c.js",
     "src": "templates/_generic-components/textarea/textarea-component-legacy.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/touch-slider/touch-slider-legacy.ts": {
-    "file": "assets/touch-slider-legacy.3a872130.js",
+    "file": "assets/touch-slider-legacy.2fa63c58.js",
     "src": "templates/_generic-components/touch-slider/touch-slider-legacy.ts",
     "isDynamicEntry": true
   },
   "vite/legacy-polyfills": {
-    "file": "assets/polyfills-legacy.f46c3208.js",
+    "file": "assets/polyfills-legacy.aca4102c.js",
     "src": "vite/legacy-polyfills",
     "isEntry": true
   },
   "src/app/app.ts": {
-    "file": "assets/app.ffe5507b.js",
+    "file": "assets/app.b9507421.js",
     "src": "src/app/app.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -131,6 +137,7 @@
       "templates/_generic-components/input-pin/input-pin.ts",
       "templates/_generic-components/input-range/input-range.ts",
       "templates/_generic-components/input-url/input-url.ts",
+      "templates/_generic-components/lit-component/lit-component.ts",
       "templates/_generic-components/select/select-component.ts",
       "templates/_generic-components/swiper-card-slider/swiper-card-slider.ts",
       "templates/_generic-components/textarea/textarea-component.ts",
@@ -138,12 +145,12 @@
     ]
   },
   "templates/_generic-components/card-carousel/card-carousel.ts": {
-    "file": "assets/card-carousel.5e013be1.js",
+    "file": "assets/card-carousel.1e7e05bd.js",
     "src": "templates/_generic-components/card-carousel/card-carousel.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/content-carousel/content-carousel.ts": {
-    "file": "assets/content-carousel.9b676411.js",
+    "file": "assets/content-carousel.142a31b8.js",
     "src": "templates/_generic-components/content-carousel/content-carousel.ts",
     "isDynamicEntry": true
   },
@@ -153,67 +160,72 @@
     "isDynamicEntry": true
   },
   "templates/_generic-components/image-slider/image-slider.ts": {
-    "file": "assets/image-slider.b956a9e9.js",
+    "file": "assets/image-slider.a60ab45d.js",
     "src": "templates/_generic-components/image-slider/image-slider.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-component/input-component.ts": {
-    "file": "assets/input-component.dd564f58.js",
+    "file": "assets/input-component.99dabaac.js",
     "src": "templates/_generic-components/input-component/input-component.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-date/input-date.ts": {
-    "file": "assets/input-date.a075f065.js",
+    "file": "assets/input-date.c83d170a.js",
     "src": "templates/_generic-components/input-date/input-date.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-email/input-email.ts": {
-    "file": "assets/input-email.0b0119a1.js",
+    "file": "assets/input-email.3c82cdb4.js",
     "src": "templates/_generic-components/input-email/input-email.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-password/input-password.ts": {
-    "file": "assets/input-password.ec9a4c9a.js",
+    "file": "assets/input-password.1444f0b4.js",
     "src": "templates/_generic-components/input-password/input-password.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-phone/input-phone.ts": {
-    "file": "assets/input-phone.65f9a2f1.js",
+    "file": "assets/input-phone.476d5971.js",
     "src": "templates/_generic-components/input-phone/input-phone.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-pin/input-pin.ts": {
-    "file": "assets/input-pin.2d9739b7.js",
+    "file": "assets/input-pin.64360a06.js",
     "src": "templates/_generic-components/input-pin/input-pin.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-range/input-range.ts": {
-    "file": "assets/input-range.a7ff4225.js",
+    "file": "assets/input-range.3dc75fce.js",
     "src": "templates/_generic-components/input-range/input-range.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/input-url/input-url.ts": {
-    "file": "assets/input-url.d6a48559.js",
+    "file": "assets/input-url.96285f3f.js",
     "src": "templates/_generic-components/input-url/input-url.ts",
     "isDynamicEntry": true
   },
+  "templates/_generic-components/lit-component/lit-component.ts": {
+    "file": "assets/lit-component.311b308d.js",
+    "src": "templates/_generic-components/lit-component/lit-component.ts",
+    "isDynamicEntry": true
+  },
   "templates/_generic-components/select/select-component.ts": {
-    "file": "assets/select-component.bffcece7.js",
+    "file": "assets/select-component.51afae96.js",
     "src": "templates/_generic-components/select/select-component.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/swiper-card-slider/swiper-card-slider.ts": {
-    "file": "assets/swiper-card-slider.240b1243.js",
+    "file": "assets/swiper-card-slider.4f1eb54b.js",
     "src": "templates/_generic-components/swiper-card-slider/swiper-card-slider.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/textarea/textarea-component.ts": {
-    "file": "assets/textarea-component.e055d30e.js",
+    "file": "assets/textarea-component.a65a40b4.js",
     "src": "templates/_generic-components/textarea/textarea-component.ts",
     "isDynamicEntry": true
   },
   "templates/_generic-components/touch-slider/touch-slider.ts": {
-    "file": "assets/touch-slider.60a39655.js",
+    "file": "assets/touch-slider.334ffe92.js",
     "src": "templates/_generic-components/touch-slider/touch-slider.ts",
     "isDynamicEntry": true
   }

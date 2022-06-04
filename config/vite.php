@@ -10,9 +10,9 @@ return [
     'errorEntry' => '',
     'cacheKeySuffix' => '',
     'devServerInternal' => '',
-    'checkDevServer' => false,
+    'checkDevServer' => true,
     'includeReactRefreshShim' => false,
     'includeModulePreloadShim' => true,
-    'criticalPath' => '@webroot/dist/criticalcss',
-    'criticalSuffix' =>'_critical.min.css',
+    // 'criticalPath' => '@webroot/dist/criticalcss',
+    // 'criticalSuffix' =>'_critical.min.css',
 ];
