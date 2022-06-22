@@ -25,22 +25,22 @@ row-container-inner {
         flex: 0 0 auto;
         // padding-right: var(--half-gutter-width, 0.5rem);
         // padding-left: var(--half-gutter-width, 0.5rem);
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
 
         // Default to 100% width
         flex-basis: 100%;
         max-width: 100%;
 
-        @media screen and (max-width: 975px) {
-            margin-bottom: 4rem;
-            &-12 {
-                margin-bottom: 2rem;
-            }
-        }
+        // @media screen and (max-width: 975px) {
+        //     margin-bottom: 4rem;
+        //     &-12 {
+        //         margin-bottom: 2rem;
+        //     }
+        // }
 
         // &-1 {
         //     flex-basis: 8.33333333%;

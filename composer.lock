@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88402f45bc47597e56410d4fb357bfdc",
+    "content-hash": "905bd347bbc9ae47fa24f66c29cdf5b7",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2560,66 +2560,6 @@
             "time": "2020-07-16T12:34:01+00:00"
         },
         {
-            "name": "sebastianlenz/craft-utils",
-            "version": "3.0.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/043a2971c4fb8a3775f9a65502ca11db66b628a2",
-                "reference": "043a2971c4fb8a3775f9a65502ca11db66b628a2",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0-beta",
-                "php": "^8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "lenz\\craft\\utils\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A collection of utility classes for Craft CMS development",
-            "time": "2022-05-18T10:09:29+00:00"
-        },
-        {
-            "name": "sebastianlenz/linkfield",
-            "version": "2.1.3-rc",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/ac11c92df2049f8192327944b9c21449a464be55",
-                "reference": "ac11c92df2049f8192327944b9c21449a464be55",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0-beta",
-                "php": "^8.0",
-                "sebastianlenz/craft-utils": "^3.0.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "typedlinkfield",
-                "name": "Typed link field",
-                "developer": "Sebastian Lenz",
-                "developerUrl": "https://github.com/sebastian-lenz/"
-            },
-            "autoload": {
-                "classmap": [
-                    "legacy"
-                ],
-                "psr-4": {
-                    "lenz\\linkfield\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Craft field type for selecting links",
-            "time": "2022-05-09T08:35:20+00:00"
-        },
-        {
             "name": "seld/cli-prompt",
             "version": "1.0.4",
             "dist": {
@@ -4148,6 +4088,67 @@
             "time": "2022-04-06T06:47:41+00:00"
         },
         {
+            "name": "vaersaagod/matrixmate",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vaersaagod/matrixmate.git",
+                "reference": "f998366c9bc5ee8751b24ae1236e0a6569dd080d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vaersaagod/matrixmate/zipball/f998366c9bc5ee8751b24ae1236e0a6569dd080d",
+                "reference": "f998366c9bc5ee8751b24ae1236e0a6569dd080d",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "MatrixMate",
+                "handle": "matrixmate",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/matrixmate/master/CHANGELOG.md",
+                "class": "vaersaagod\\matrixmate\\MatrixMate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vaersaagod\\matrixmate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Værsågod",
+                    "homepage": "https://vaersaagod.no"
+                }
+            ],
+            "description": "Welding Matrix into shape, mate!",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "matrixmate"
+            ],
+            "support": {
+                "docs": "https://github.com/vaersaagod/matrixmate/blob/master/README.md",
+                "issues": "https://github.com/vaersaagod/matrixmate/issues",
+                "source": "https://github.com/vaersaagod/matrixmate/tree/v2.0.1"
+            },
+            "time": "2022-05-07T16:50:15+00:00"
+        },
+        {
             "name": "verbb/base",
             "version": "2.0.0",
             "dist": {
@@ -5224,7 +5225,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sebastianlenz/linkfield": 5,
         "verbb/super-table": 10
     },
     "prefer-stable": false,
@@ -5234,5 +5234,5 @@
     "platform-overrides": {
         "php": "8.0.2"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

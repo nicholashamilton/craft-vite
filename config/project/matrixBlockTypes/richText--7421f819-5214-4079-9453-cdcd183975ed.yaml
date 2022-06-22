@@ -24,9 +24,154 @@ fieldLayouts:
             uid: c86797d2-c2d9-4b4c-88e4-a9ef2b59b0f8
             warning: null
             width: 100
+          -
+            fieldUid: 4d325bb5-d99a-4266-9eac-a8d44c501ddf # Text Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1b3f66e-be02-46d5-99ab-89a69f20e781
+            warning: null
+            width: 100
+          -
+            fieldUid: 67fa8d96-3b70-4fdc-b773-e2bfa684de30 # Block Width
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d781ff8f-bbb7-4a52-99dd-52a645e7a58a
+            warning: null
+            width: 25
         name: Content
         uid: 40ea4986-b95e-4a9a-bccc-c4cf0d52efcb
 fields:
+  4d325bb5-d99a-4266-9eac-a8d44c501ddf: # Text Alignment
+    columnSuffix: bjvwdhuv
+    contentColumnType: string
+    fieldGroup: null
+    handle: textAlignment
+    instructions: null
+    name: 'Text Alignment'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - text-left
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Center
+            -
+              - value
+              - text-center
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Right
+            -
+              - value
+              - text-right
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Justify
+            -
+              - value
+              - text-justify
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  67fa8d96-3b70-4fdc-b773-e2bfa684de30: # Block Width
+    columnSuffix: efnehrwq
+    contentColumnType: string
+    fieldGroup: null
+    handle: blockWidth
+    instructions: null
+    name: 'Block Width'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 100%
+            -
+              - value
+              - column-12
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 50%
+            -
+              - value
+              - column-6
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 33.33%
+            -
+              - value
+              - column-4
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 25%
+            -
+              - value
+              - column-3
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 66.66%
+            -
+              - value
+              - column-8
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   290a0c6b-f5e6-45ef-bb53-5a0518dd6027: # Copy
     columnSuffix: wayfykkv
     contentColumnType: text

@@ -1,49 +1,36 @@
-/**
- * Site Module module for Craft CMS
- *
- * Site Module JS
- *
- * @author    Nicholas Hamilton
- * @copyright Copyright (c) 2022 Nicholas Hamilton
- * @link      github.com/nicholashamilton
- * @package   SiteModule
- * @since     1.0.0
- */
-
 const previewChecker = setInterval(initPreviewModule, 1500);
 
 function initPreviewModule() {
-    const previewEl = document.querySelector('div[aria-labelledby="lp-preview-heading"');
-    if (!previewEl) return;
+    const editorEl = document.querySelector('.lp-editor-container');
+    if (!editorEl) return;
 
-    const previewContainer = previewEl.querySelector(".lp-device-preview-container");
-    if (!previewContainer) return;
+    const previewEl = document.querySelector(".lp-device-preview-container");
+    if (!previewEl) return;
 
     clearInterval(previewChecker);
 
-    observePreviewContainer(previewContainer, previewEl);
+    observePreviewEl(previewEl, editorEl);
 
     const iframe = previewEl.querySelector("iframe");
-    if (iframe) iframePreviewInit(previewEl, iframe);
-    iframe.onload = () => {
-        iframePreviewInit(previewEl, iframe);
-    };
+    if (iframe) iframePreviewInit(editorEl, iframe);
+    iframe.onload = () => iframePreviewInit(editorEl, iframe);
 }
 
-function observePreviewContainer(previewContainer, previewEl) {
+function observePreviewEl(previewEl, editorEl) {
     const config = { childList: true };
     const callback = (mutationsList) => {
         if (mutationsList.length && mutationsList[0].addedNodes.length) {
             const iframeEl = mutationsList[0].addedNodes[0];
-            iframeEl.onload = () => iframePreviewInit(previewEl, iframeEl);
+            iframeEl.onload = () => iframePreviewInit(editorEl, iframeEl);
         }
     };
     const observer = new MutationObserver(callback);
-    observer.observe(previewContainer, config);
+    observer.observe(previewEl, config);
 }
 
-function iframePreviewInit(previewEl, iframe) {
-    const editorBlocks = previewEl.querySelectorAll(".blocks div.matrixblock");
+function iframePreviewInit(editorEl, iframe) {
+    const editBlocksQuery = ".matrix.matrix-field#fields-blocksBuilder .blocks div.matrixblock:not([data-type='rowContainer']):not(.disabled):not(.superTableMatrix)";
+    const editorBlocks = editorEl.querySelectorAll(editBlocksQuery);
     const previewBlocks = iframe.contentWindow.document.body.querySelectorAll("[preview-block]");
 
     if (!editorBlocks.length || !previewBlocks.length) return;
@@ -58,12 +45,12 @@ function iframePreviewInit(previewEl, iframe) {
             });
         });
 
-        previewBlock.addEventListener("mouseenter", function() {
+        previewBlock.addEventListener("mouseenter", function () {
             previewBlock.classList.add("preview-block-hover");
             editorBlocks[i].style.border = "2px solid #9ba3b5";
         });
 
-        previewBlock.addEventListener("mouseleave", function() {
+        previewBlock.addEventListener("mouseleave", function () {
             previewBlock.classList.remove("preview-block-hover");
             editorBlocks[i].style.border = "2px solid transparent";
         });

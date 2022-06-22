@@ -23,7 +23,7 @@
             {% include blockIncludePath %}
         {% else %}
             <column-container
-                class="column {{ block.blockWidth.value ?? 'column-12' }} column-12"
+                class="column {{ block.blockWidth.value ?? 'column-12' }}"
                 preview-block
             >
                 {% include blockIncludePath ignore missing %}
@@ -36,7 +36,7 @@
 
 {% endif %}
 
-  <style>
+<style>
     [preview-block].preview-block-hover {
         position: relative;
         cursor: pointer;
