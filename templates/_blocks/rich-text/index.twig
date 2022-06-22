@@ -1,0 +1,12 @@
+{% if block.heading|length or block.copy|length %}
+    <div class="rich-text w-full">
+        {% if block.heading|length %}
+            <h1>{{ block.heading }}</h1>
+        {% endif %}
+        {% if block.copy|length %}
+            <div class="g-copy">
+                {{ block.copy|raw }}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

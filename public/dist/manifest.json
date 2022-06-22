@@ -1,6 +1,6 @@
 {
   "src/app/app-legacy.ts": {
-    "file": "assets/app-legacy.23e7e0be.js",
+    "file": "assets/app-legacy.cdf1d6c4.js",
     "src": "src/app/app-legacy.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -91,7 +91,7 @@
     "isDynamicEntry": true
   },
   "templates/_generic-components/lit-component/lit-component-legacy.ts": {
-    "file": "assets/lit-component-legacy.fcb3ce9f.js",
+    "file": "assets/lit-component-legacy.b39f22f5.js",
     "src": "templates/_generic-components/lit-component/lit-component-legacy.ts",
     "isDynamicEntry": true
   },
@@ -121,7 +121,7 @@
     "isEntry": true
   },
   "src/app/app.ts": {
-    "file": "assets/app.b9507421.js",
+    "file": "assets/app.edac2780.js",
     "src": "src/app/app.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -205,7 +205,7 @@
     "isDynamicEntry": true
   },
   "templates/_generic-components/lit-component/lit-component.ts": {
-    "file": "assets/lit-component.311b308d.js",
+    "file": "assets/lit-component.44b5d34c.js",
     "src": "templates/_generic-components/lit-component/lit-component.ts",
     "isDynamicEntry": true
   },

@@ -1,0 +1,14 @@
+
+{% extends '_layouts/page' %}
+
+{% block content %}
+
+    <section id="{{ entry.slug }}" class="block relative">
+
+        {{ include("_blocks", {
+            'blocks': entry.blocksBuilder.all(),
+        }) }}
+
+    </section>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+row-container {
+    display: block;
+    position: relative;
+
+    &.-background {
+        &-grey {
+            background-color: var(--light-background);
+        }
+    }
+
+    .row-bg-image-wrapper {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &::after {
+            display: none;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        &.light {
+            &::after {
+                display: block;
+                background-color: rgba(255, 255, 255, .7);
+            }
+        }
+
+        &.dark {
+            &::after {
+                display: block;
+                background-color: rgba(0, 0, 0, .7);
+            }
+        }
+    }
+}

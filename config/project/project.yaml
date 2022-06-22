@@ -1,4 +1,4 @@
-dateModified: 1654209798
+dateModified: 1655868427
 email:
   fromEmail: nicholashamilton.co@gmail.com
   fromName: 'Headless Next'
@@ -10,13 +10,21 @@ meta:
     19a16f46-bb2d-43e5-ae2c-967059d41288: 'Craft Boiler' # Craft Boiler
     60bf332d-1f89-495c-94d8-b8efb637840e: 'Page Builder' # Page Builder
     74b9b88d-409e-4fdc-ae82-fcd11384a7ac: 'Background Image' # Background Image
+    290a0c6b-f5e6-45ef-bb53-5a0518dd6027: Copy # Copy
+    7421f819-5214-4079-9453-cdcd183975ed: 'Rich Text' # Rich Text
     92347230-7cd7-459c-95c6-f5797f9f01f8: Default # Default
     a8b08698-3388-49f6-b747-8edb811dc108: Copy # Copy
     b4961f27-57e0-47eb-af58-64ea23beec4a: Heading # Heading
     be626170-6d2a-4baf-9f4e-b9b062fc0092: Pages # Pages
     dd19649c-bb86-4c78-8857-6f84d79f1064: Common # Common
     e73cc16d-5c7e-41cc-82a9-066ae653fe51: 'Public Schema' # Public Schema
+    edf10d2e-0ce3-4149-9d10-f6fa278d1aa6: Heading # Heading
+    fdbfc807-7ac7-4c48-bdf5-a87b54757f92: 'Blocks Builder' # Blocks Builder
 plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
   super-table:
     edition: standard
     enabled: true

@@ -1,0 +1,33 @@
+<row-container
+    class="g-container -full u-block -background{{ block.backgroundColor.value ?? "-white" }}"
+>
+    {# {% set backgroundImageOverlay = block.backgroundImageOverlay.value %}
+    {% set backgroundImage = block.backgroundImage.one() ?? null %}
+    {% if backgroundImage|length %}
+        {% set transformedImages = craft.imager.transformImage(backgroundImage, [
+            { width: 320, },
+            { width: 480, },
+            { width: 720, },
+            { width: 860, },
+            { width: 1080, },
+            { width: 1280, },
+            { width: 1440, },
+            { width: 1920, },
+            { width: 2160, },
+        ],
+        {
+            position: backgroundImage.getFocalPoint(),
+            format: imagerFormat,
+            mode: 'crop',
+        }) %}
+        <div class="row-bg-image-wrapper {{ backgroundImageOverlay }}">
+            <img src="{{ transformedImages[4].url }}" srcset="{{ craft.imager.srcset(transformedImages) }}" alt="{{ backgroundImage.title }}" />
+        </div>
+    {% endif %} #}
+
+    {% set columnsHorizontalAlignment = block.columnsHorizontalAlignment.value ?? 'u-justify-start' %}
+    {% set columnsVerticalAlignment = block.columnsVerticalAlignment.value ?? 'u-items-start' %}
+    {# {% set rowWidth = block.rowWidth ?? "-normal" %} #}
+    {% set rowWidth = '-normal' %}
+
+    <row-container-inner class="g-container {{ rowWidth }} -center u-flex {{ columnsHorizontalAlignment }} {{ columnsVerticalAlignment }}">
