@@ -46,12 +46,12 @@ function iframePreviewInit(editorEl, iframe) {
         });
 
         previewBlock.addEventListener("mouseenter", function () {
-            previewBlock.classList.add("preview-block-hover");
+            previewBlock.classList.add("is-hovering");
             editorBlocks[i].style.border = "2px solid #9ba3b5";
         });
 
         previewBlock.addEventListener("mouseleave", function () {
-            previewBlock.classList.remove("preview-block-hover");
+            previewBlock.classList.remove("is-hovering");
             editorBlocks[i].style.border = "2px solid transparent";
         });
     }

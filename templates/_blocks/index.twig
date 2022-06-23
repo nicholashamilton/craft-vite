@@ -37,17 +37,23 @@
 {% endif %}
 
 <style>
-    [preview-block].preview-block-hover {
+    [preview-block] {
         position: relative;
         cursor: pointer;
     }
-    [preview-block].preview-block-hover::after {
+    [preview-block]::after {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border: 1px dashed rgba(0, 0, 0, .3);
+        border: 1px dashed rgba(0, 0, 0, .333);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 300ms ease;
+    }
+    [preview-block].is-hovering::after {
+        opacity: 1;
     }
 </style>
