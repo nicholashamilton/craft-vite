@@ -25,7 +25,7 @@ class SiteModuleVariable
         $cssFilePaths = glob(CRAFT_BASE_PATH . "/public/dist/assets/*.css");
 
         foreach ($cssFilePaths as $cssPath) {
-            if (str_contains($cssPath, "styles.")) {
+            if (str_contains($cssPath, "main.")) {
                 $cssHref =  "/dist/assets/" . basename($cssPath);
 
                 return "
