@@ -6,7 +6,7 @@
 - [x] TypeScript | ES Modules
 - [x] Tailwind | SCSS
 - [x] Web Component/ LitElement Auto Loader
-- [ ] Generic Component Collection
+- [x] Generic Component Collection
 - [ ] Dynamic Page Builder
 
 #### Running on Dev
