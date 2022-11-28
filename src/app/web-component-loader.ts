@@ -65,4 +65,4 @@ class WebComponentLoader implements WebComponentLoaderInterface {
 
 const webComponentLoader = new WebComponentLoader();
 const initModules: () => void = webComponentLoader.initModules.bind(webComponentLoader);
-export { initModules }
+export { initModules };
