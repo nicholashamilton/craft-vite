@@ -69,6 +69,6 @@ export default class CustomElement extends LitElement {
 
 ### PreviewMate Plugin
 This project comes installed with the PreviewMate plugin.
-Configuration file can be found in `config/preview-mate.php`.
-An example utilizing the `blocksBuilder` matrix field is included in `templates/pages/_entry.twig` file.
-Plugin documentation can be found [here](https://github.com/nicholashamilton/craft-preview-mate)
+Configuration file can be found in [config/preview-mate.php](https://github.com/nicholashamilton/craft-vite/blob/main/config/preview-mate.php).
+An example utilizing the `blocksBuilder` matrix field is included in [templates/pages/_entry.twig](https://github.com/nicholashamilton/craft-vite/blob/main/templates/pages/_entry.twig).
+Plugin documentation can be found [here](https://github.com/nicholashamilton/craft-preview-mate).
