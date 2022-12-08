@@ -24,7 +24,7 @@
         {% else %}
             <column-container
                 class="column {{ block.blockWidth.value ?? 'column-12' }}"
-                preview-block
+                {{ craft.previewMate.previewBlock("blocksBuilder") }}
             >
                 {% include blockIncludePath ignore missing %}
             </column-container>

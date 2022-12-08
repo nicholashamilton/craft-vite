@@ -1,10 +1,10 @@
-# Site Module module for Craft CMS 3.x
+# Site Module module for Craft CMS 4.x
 
 Module for basic site needs.
 
 ## Requirements
 
-This module requires Craft CMS 3.0.0-RC1 or later.
+This module requires Craft CMS ^4.0.0
 
 ## Installation
 

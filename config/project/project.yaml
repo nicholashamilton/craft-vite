@@ -1,4 +1,4 @@
-dateModified: 1655882719
+dateModified: 1670522226
 email:
   fromEmail: nicholashamilton.co@gmail.com
   fromName: 'Headless Next'
@@ -24,6 +24,10 @@ meta:
     fdbfc807-7ac7-4c48-bdf5-a87b54757f92: 'Blocks Builder' # Blocks Builder
 plugins:
   matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  preview-mate:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

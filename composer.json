@@ -1,10 +1,11 @@
 {
     "require": {
-        "craftcms/cms": "4.3.3",
+        "craftcms/cms": "4.3.4",
         "craftcms/redactor": "3.0.2",
+        "nicholashamilton/craft-preview-mate": "1.0.0",
         "nystudio107/craft-vite": "4.0.3",
         "vaersaagod/matrixmate": "2.1.2",
-        "verbb/super-table": "3.0.5",
+        "verbb/super-table": "3.0.6",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {

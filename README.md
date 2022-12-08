@@ -66,3 +66,9 @@ export default class CustomElement extends LitElement {
 #### Creating new SCSS files
 * Create `SCSS` files anywhere in `src/styles` and `templates`.
 * `@import` `SCSS` files into the `src/styles/main.scss` and use Tailwind throughout the templates.
+
+### PreviewMate Plugin
+This project comes installed with the PreviewMate plugin.
+Configuration file can be found in `config/preview-mate.php`.
+An example utilizing the `blocksBuilder` matrix field is included in `templates/pages/_entry.twig` file.
+Plugin documentation can be found [here](https://github.com/nicholashamilton/craft-preview-mate)
