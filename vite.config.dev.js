@@ -6,7 +6,10 @@ export default ({ command }) => ({
         rollupOptions: {
             input: {
                 app: "./src/app/app.ts",
-                main: "./src/styles/main.scss",
+                css: "./src/styles/main.scss",
+            },
+            output: {
+                sourcemap: true,
             },
         },
         minify: false,

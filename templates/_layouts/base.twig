@@ -13,7 +13,9 @@
         <title>CraftCMS Boilerplate</title>
         <meta name="description" content="CraftCMS Boilerplate">
 
-        {{ craft.siteModule.getCachedMainCSS()|raw }}
+        {% set mainCss = craft.vite.asset("src/styles/main.scss") %}
+        <link rel="preload" href="{{ mainCss }}" as="style">
+        <link rel="stylesheet" href="{{ mainCss }}">
 
     </head>
 

@@ -19,22 +19,4 @@ use Craft;
  * @package   SiteModule
  * @since     1.0.0
  */
-class SiteModuleVariable
-{
-    public function getCachedMainCSS() {
-        $cssFilePaths = glob(CRAFT_BASE_PATH . "/public/dist/assets/*.css");
-
-        foreach ($cssFilePaths as $cssPath) {
-            if (str_contains($cssPath, "main.")) {
-                $cssHref =  "/dist/assets/" . basename($cssPath);
-
-                return "
-                    <link rel='preload' href='$cssHref' as='style'>
-                    <link rel='stylesheet' href='$cssHref'>
-                ";
-            }
-        }
-
-        return "";
-    }
-}
+class SiteModuleVariable {}
