@@ -1,4 +1,4 @@
-import { initModules } from './web-component-loader';
+import { initModules } from '@/src/app/web-component-loader';
 
 document.body.classList.remove("preload");
 
