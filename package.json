@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "CraftCMS Vite Boilerplate",
   "scripts": {
-    "build": "tsc && vite build --config vite.config.production.js",
-    "dev": "tsc && vite build --config vite.config.dev.js"
+    "dev": "vite serve",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",
