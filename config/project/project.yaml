@@ -1,4 +1,4 @@
-dateModified: 1694190845
+dateModified: 1694190934
 email:
   fromEmail: nicholashamilton.co@gmail.com
   fromName: 'Headless Next'
@@ -6,7 +6,7 @@ email:
 meta:
   __names__:
     4d325bb5-d99a-4266-9eac-a8d44c501ddf: 'Text Alignment' # Text Alignment
-    6a569bef-febb-4b6b-857f-97a1358759b1: 'Craft Boiler' # Craft Boiler
+    6a569bef-febb-4b6b-857f-97a1358759b1: 'Craft Vite' # Craft Vite
     10d177cd-febb-4bde-be18-72958a8d0eba: Slide # Slide
     19a16f46-bb2d-43e5-ae2c-967059d41288: 'Craft Boiler' # Craft Boiler
     60bf332d-1f89-495c-94d8-b8efb637840e: 'Page Builder' # Page Builder
@@ -46,7 +46,8 @@ plugins:
 system:
   edition: pro
   live: true
-  name: 'Headless Next'
+  name: 'Craft Vite'
+  retryDuration: null
   schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:

@@ -3,7 +3,7 @@ enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: 'Craft Boiler'
+name: 'Craft Vite'
 primary: true
 siteGroup: 19a16f46-bb2d-43e5-ae2c-967059d41288 # Craft Boiler
 sortOrder: 1
