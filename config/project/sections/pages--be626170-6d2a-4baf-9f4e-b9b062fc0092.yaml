@@ -16,7 +16,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  6a569bef-febb-4b6b-857f-97a1358759b1: # Craft Boiler
+  6a569bef-febb-4b6b-857f-97a1358759b1: # Craft Vite
     enabledByDefault: true
     hasUrls: true
     template: pages/_entry
