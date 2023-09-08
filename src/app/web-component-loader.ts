@@ -45,7 +45,13 @@ class WebComponentLoader implements WebComponentLoaderInterface {
 
     private async mountWebComponents() {
         for (let i = 0; i < this._webComponentTagNames.length; i++) {
-            const currModule = this._modulesDictionary[this._webComponentTagNames[i]];
+            this.mountWebComponent(this._webComponentTagNames[i]);
+        }
+    }
+
+    private async mountWebComponent(tagName: string) {
+        try {
+            const currModule = this._modulesDictionary[tagName];
             if (!customElements.get(currModule.tagName)) {
                 let module = await currModule.module();
                 if (!module?.default) {
@@ -59,6 +65,9 @@ class WebComponentLoader implements WebComponentLoaderInterface {
                 }
                 customElements.define(currModule.tagName, module.default);
             }
+        } catch (error) {
+            console.error(error);
+            console.error(`Failed to import module: ${tagName}`);
         }
     }
 }

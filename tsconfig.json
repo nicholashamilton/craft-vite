@@ -20,6 +20,10 @@
             "vite/client",
         ],
         "experimentalDecorators": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["./*"]
+        }
     },
     "include": [
         "./src/**/*",

@@ -8,6 +8,7 @@
  * @see \craft\config\GeneralConfig
  */
 
+use craft\config\GeneralConfig;
 use craft\helpers\App;
 
 $isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
@@ -21,6 +22,7 @@ return [
     'disallowRobots' => !$isProd,
     'enableTemplateCaching' => !$isDev,
     'aliases' => [
-        '@web' => App::env("PRIMARY_SITE_URL"),
+        '@web' => rtrim(APP::env('PRIMARY_SITE_URL'), '/'),
+        '@webroot' => dirname(__DIR__) . '/public',
     ],
 ];
