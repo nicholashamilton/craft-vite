@@ -1,7 +1,7 @@
 {
-  "name": "craft-cms-boilerplate",
+  "name": "craft-vite",
   "version": "1.0.0",
-  "description": "CraftCMS Boilerplate",
+  "description": "CraftCMS Vite Boilerplate",
   "scripts": {
     "build": "tsc && vite build --config vite.config.production.js",
     "dev": "tsc && vite build --config vite.config.dev.js"

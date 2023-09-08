@@ -1,4 +1,4 @@
-dateModified: 1685568803
+dateModified: 1694190845
 email:
   fromEmail: nicholashamilton.co@gmail.com
   fromName: 'Headless Next'
@@ -47,7 +47,7 @@ system:
   edition: pro
   live: true
   name: 'Headless Next'
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
