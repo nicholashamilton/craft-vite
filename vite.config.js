@@ -14,6 +14,7 @@ export default defineConfig(({ command, mode }) => {
             __APP_ENV__: JSON.stringify(env.APP_ENV),
         },
         base: command === 'serve' ? '' : '/dist/',
+        publicDir: './public',
         build: {
             manifest: true,
             outDir: './public/dist/',
@@ -22,6 +23,9 @@ export default defineConfig(({ command, mode }) => {
                     app: './src/app/app.ts',
                     css: './src/styles/main.scss',
                 },
+                output: {
+                    sourcemap: true
+                },
             },
         },
         server: {
@@ -29,6 +33,7 @@ export default defineConfig(({ command, mode }) => {
                 strict: false,
             },
             origin: env.PRIMARY_SITE_URL || 'http://localhost:3000',
+            host: '0.0.0.0',
             port: 3000,
             strictPort: true,
         },
