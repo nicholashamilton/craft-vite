@@ -6,7 +6,7 @@
 - [x] TypeScript | ES Modules
 - [x] Tailwind | SCSS
 - [x] Web Component/ LitElement Auto Loader
-- [x] React `optional`
+- [x] React/ Preact `optional`
 - [x] Generic Component Collection
 - [ ] Dynamic Page Builder
 
@@ -149,3 +149,7 @@ Add mounting element and app bundle in a twig file
 <div id="root"></div>
 {{ craft.vite.script("src/react/index.tsx") }}
 ```
+
+#### Choose a framework. 
+
+Follow the [Vite framework templates](https://vitejs.dev/guide/#trying-vite-online) for complete set up instructions. `react`, `preact`, `lit`, `svelte`, `vue`, `solid`, `qwik`
