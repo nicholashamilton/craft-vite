@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@types/node": "^20.6.0",
     "@vitejs/plugin-legacy": "^4.0.1",
     "autoprefixer": "^10.4.7",
     "cssnano": "^5.1.9",
