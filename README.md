@@ -70,7 +70,7 @@ export default class CustomElement extends LitElement {
 
 ---
 
-#### Creating new SCSS files
+### Creating new SCSS files
 * Create `SCSS` files anywhere in `src/styles` and `templates`.
 * `@import` `SCSS` files into the `src/styles/main.scss` and use Tailwind throughout the templates.
 
@@ -84,7 +84,7 @@ Plugin documentation can be found [here](https://github.com/nicholashamilton/cra
 
 ---
 
-#### Using React `optional`
+### Using React `optional`
 
 React has not been installed or configured yet. 
 
@@ -150,6 +150,6 @@ Add mounting element and app bundle in a twig file
 {{ craft.vite.script("src/react/index.tsx") }}
 ```
 
-#### Choose a framework. 
+### Choose a framework. 
 
 Follow the [Vite framework templates](https://vitejs.dev/guide/#trying-vite-online) for complete set up instructions. `react`, `preact`, `lit`, `svelte`, `vue`, `solid`, `qwik`
