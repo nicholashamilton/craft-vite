@@ -1,25 +1,30 @@
 # CraftCMS + Vite Boilerplate
 
-#### Roadmap
+### Roadmap
 - [x] CraftCMS 4 + PHP 8.2
 - [x] Vite ⚡
 - [x] TypeScript | ES Modules
 - [x] Tailwind | SCSS
 - [x] Web Component/ LitElement Auto Loader
+- [x] React `optional`
 - [x] Generic Component Collection
 - [ ] Dynamic Page Builder
 
-#### Running on Dev
+---
+
+### Running on Dev
 1. Update `.env` `CRAFT_ENVIRONMENT` to `dev`
 2. `npm run dev`
 3. Go to the `host` URL on local web server.
 
-#### Previewing Production on Local
+### Previewing Production on Local
 1. Update `.env` `CRAFT_ENVIRONMENT` to `production` or `staging`
 2. Run `npm run build`
 3. Go to the `host` URL on local web server.
 
-#### Auto Loading Web Component/ LitElement
+---
+
+### Auto Loading Web Component/ LitElement
 
 1. Create your custom element with the web-component `attribute`.
 ```html
@@ -63,9 +68,13 @@ export default class CustomElement extends LitElement {
 }
 ```
 
+---
+
 #### Creating new SCSS files
 * Create `SCSS` files anywhere in `src/styles` and `templates`.
 * `@import` `SCSS` files into the `src/styles/main.scss` and use Tailwind throughout the templates.
+
+---
 
 ### PreviewMate Plugin
 This project comes installed with the PreviewMate plugin.
@@ -73,7 +82,9 @@ Configuration file can be found in [config/preview-mate.php](https://github.com/
 An example utilizing the `blocksBuilder` matrix field is included in [templates/pages/_entry.twig](https://github.com/nicholashamilton/craft-vite/blob/main/templates/pages/_entry.twig).
 Plugin documentation can be found [here](https://github.com/nicholashamilton/craft-preview-mate).
 
-#### Using React `optional setup`
+---
+
+#### Using React `optional`
 
 React has not been installed or configured yet. 
 
