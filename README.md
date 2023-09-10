@@ -1,7 +1,7 @@
-# CraftCMS-Boilerplate
+# CraftCMS + Vite Boilerplate
 
 #### Roadmap
-- [x] CraftCMS 4 (requires php v8.0.2)
+- [x] CraftCMS 4 + PHP 8.2
 - [x] Vite ⚡
 - [x] TypeScript | ES Modules
 - [x] Tailwind | SCSS
@@ -72,3 +72,69 @@ This project comes installed with the PreviewMate plugin.
 Configuration file can be found in [config/preview-mate.php](https://github.com/nicholashamilton/craft-vite/blob/main/config/preview-mate.php).
 An example utilizing the `blocksBuilder` matrix field is included in [templates/pages/_entry.twig](https://github.com/nicholashamilton/craft-vite/blob/main/templates/pages/_entry.twig).
 Plugin documentation can be found [here](https://github.com/nicholashamilton/craft-preview-mate).
+
+#### Using React `optional setup`
+
+React has not been installed or configured yet. 
+
+To do so install the following dependencies: 
+
+```
+npm i react react-dom @types/react @types/react-dom @vitejs/plugin-react
+```
+
+Add react `input` and `plugin` to `vite.config.ts` 
+
+```ts
+import react from '@vitejs/plugin-react';
+
+// ...
+   build: {
+        rollupOptions: {
+            input: {
+                react: './src/react/index.tsx',
+            },
+        },
+    },
+// ...
+    plugins: [
+        react(),
+    ],
+// ...
+```
+
+Add react input file 
+
+`src/react/index.tsx` 
+
+```ts
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+ReactDOM.createRoot(document.querySelector('#root')!).render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+);
+
+function App() {
+    return (
+        <h1>App</h1>
+    );
+}
+```
+
+Enable the react refresh shim in `config/vite.php`
+
+```php
+// ...
+    'includeReactRefreshShim' => true,
+// ...
+```
+
+Add mounting element and app bundle in a twig file 
+
+```twig
+<div id="root"></div>
+{{ craft.vite.script("src/react/index.tsx") }}
+```
