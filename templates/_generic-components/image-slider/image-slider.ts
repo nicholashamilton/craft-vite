@@ -5,7 +5,7 @@ export default class ImageSlider extends HTMLElement {
     private _startPos: number = 0;
     private _currentTranslate: number = 0;
     private _prevTranslate: number = 0;
-    private _animationId: number;
+    private _animationId: number = 0;
     private _currentIndex: number = 0;
 
     constructor() {
@@ -16,7 +16,7 @@ export default class ImageSlider extends HTMLElement {
 
     private addEventListeners = (): void => {
         this._slides.forEach((slide, index) => {
-            const slideImage = slide.querySelector('img');
+            const slideImage = slide.querySelector('img')!;
             // disable default image drag
             slideImage.addEventListener('dragstart', (e) => e.preventDefault());
             // touch events 

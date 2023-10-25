@@ -8,16 +8,16 @@ export default class InputPin extends HTMLElement {
 
     constructor() {
         super();
-        this.input = this.querySelector("input");
-        this.textEl = this.querySelector("p");
+        this.input = this.querySelector("input")!;
+        this.textEl = this.querySelector("p")!;
         const errorEl = document.createElement("p");
         errorEl.className = "error";
         errorEl.style.display = "none";
         this.insertBefore(errorEl, this.input);
         this.errorEl = errorEl;
-        this.button = this.querySelector("button");
-        this.visibleIcon = this.querySelector(".js-visible");
-        this.hiddenIcon = this.querySelector(".js-hidden");
+        this.button = this.querySelector("button")!;
+        this.visibleIcon = this.querySelector(".js-visible")!;
+        this.hiddenIcon = this.querySelector(".js-hidden")!;
     }
 
     public validate(): boolean {

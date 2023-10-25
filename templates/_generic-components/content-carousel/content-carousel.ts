@@ -1,26 +1,25 @@
 export default class ContentCarousel extends HTMLElement {
-    private _carouselSlides: Array<HTMLElement>;
+    private _carouselSlides: HTMLElement[];
     private _currentSlideIndex: number = 0;
-    private _carouselControls: Array<HTMLButtonElement>;
-    private _carouselContainer: HTMLElement;
+    private _carouselControls: HTMLButtonElement[];
+    private _carouselContainer: HTMLElement | null;
     private _isTransitioning: boolean = false;
 
     // Auto Timer
     private _isTimerPaused: boolean = false;
-    private _callback: Function;
-    private _timer: number;
-    private _time: number;
+    private _timer: number = 0;
+    private _time: number = 0;
     private _slideDuration: number = 6; // seconds
 
     // Swipe Gestures
     private _swipeThreshold: number = 28; //required min distance traveled to be considered swipe
     private _swipeRestraint: number = 200; // maximum distance allowed at the same time in perpendicular direction
     private _allowedSwipeTime: number = 2500; // ms
-    private _swipeCounter: number;
-    private _swipeStartX: number;
-    private _swipeStartY: number;
-    private _swipeStartTime: number;
-    private _isMouseDown: boolean;
+    private _swipeCounter: number = 0;
+    private _swipeStartX: number = 0;
+    private _swipeStartY: number = 0;
+    private _swipeStartTime: number = 0;
+    private _isMouseDown: boolean = false;
 
     constructor() {
         super();
@@ -36,7 +35,7 @@ export default class ContentCarousel extends HTMLElement {
         const controlButton = e.currentTarget as HTMLButtonElement;
         const prevSlideIndex: number = this._currentSlideIndex;
 
-        const direction: number = parseInt(controlButton.getAttribute("control-direction"));
+        const direction: number = parseInt(controlButton.getAttribute("control-direction")!);
         let newSlideIndex: number = prevSlideIndex + direction;
         if (newSlideIndex < 0) {
             newSlideIndex = this._carouselSlides.length - 1;
@@ -62,7 +61,7 @@ export default class ContentCarousel extends HTMLElement {
         // Transition both slides
         this._carouselSlides[prevSlideIndex].style.transform = `translate3d(${100 * (direction * -1)}%, 0, 0)`;
         this._carouselSlides[newSlideIndex].style.transform = `translate3d(0, 0, 0)`;
-        this._carouselContainer.style.height = `${this._carouselSlides[newSlideIndex].querySelector('slide-content').scrollHeight}px`;
+        this._carouselContainer!.style.height = `${this._carouselSlides[newSlideIndex].querySelector('slide-content')!.scrollHeight}px`;
 
         // Transition Complete
         setTimeout(() => {
@@ -103,9 +102,8 @@ export default class ContentCarousel extends HTMLElement {
 
         if (this._carouselSlides.length > 1) {
             this._time = performance.now();
-            this._callback = this.callbackLoop;
             this._timer = this._slideDuration;
-            this._callback();
+            this.callbackLoop();
 
             // Add Touch Gestures
             this.addSwipeGestures();

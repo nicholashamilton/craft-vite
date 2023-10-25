@@ -1,11 +1,11 @@
 export default class InputEmail extends HTMLElement {
     private input: HTMLInputElement;
-    private textEl: HTMLElement;
+    private textEl: HTMLElement | null = null;
     private errorEl: HTMLElement;
 
     constructor() {
         super();
-        this.input = this.querySelector("input");
+        this.input = this.querySelector("input")!;
         // this.textEl = this.querySelector("p");
         const errorEl = document.createElement("p");
         errorEl.className = "error";

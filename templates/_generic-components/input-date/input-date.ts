@@ -8,17 +8,17 @@ export default class InputDate extends HTMLElement {
 
     constructor() {
         super();
-        this.input = this.querySelector('input[type="hidden"]');
-        this.textEl = this.querySelector("p:not(.label)");
+        this.input = this.querySelector('input[type="hidden"]')!;
+        this.textEl = this.querySelector("p:not(.label)")!;
         const errorEl = document.createElement("p");
         errorEl.className = "error";
         errorEl.style.display = "none";
         const pEl = this.querySelector("p:last-of-type");
         this.insertBefore(errorEl, pEl);
         this.errorEl = errorEl;
-        this.monthInput = this.querySelector("input#month");
-        this.dayInput = this.querySelector("input#day");
-        this.yearInput = this.querySelector("input#year");
+        this.monthInput = this.querySelector("input#month")!;
+        this.dayInput = this.querySelector("input#day")!;
+        this.yearInput = this.querySelector("input#year")!;
     }
 
     public validate(): boolean {

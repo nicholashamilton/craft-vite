@@ -4,7 +4,7 @@ export default class InputComponent extends HTMLElement {
 
     constructor() {
         super();
-        this.input = this.querySelector("input");
+        this.input = this.querySelector("input")!;
         const errorEl = document.createElement("p");
         errorEl.className = "error";
         this.appendChild(errorEl);

@@ -1,7 +1,7 @@
 export default class CardCarousel extends HTMLElement {
-    private nextButton: HTMLElement;
-    private backButton: HTMLElement;
-    private container: HTMLElement;
+    private nextButton: HTMLElement | null;
+    private backButton: HTMLElement | null;
+    private container: HTMLElement | null;
     private cardWidth: number;
 
     constructor() {
@@ -13,7 +13,7 @@ export default class CardCarousel extends HTMLElement {
     }
 
     private handleNextClick: EventListener = () => {
-        this.container.scrollBy({
+        this.container!.scrollBy({
             top: 0,
             left: this.cardWidth,
             behavior: "smooth",
@@ -21,7 +21,7 @@ export default class CardCarousel extends HTMLElement {
     };
 
     private handleBackClick: EventListener = () => {
-        this.container.scrollBy({
+        this.container!.scrollBy({
             top: 0,
             left: -this.cardWidth,
             behavior: "smooth",
@@ -29,7 +29,7 @@ export default class CardCarousel extends HTMLElement {
     };
 
     connectedCallback() {
-        this.nextButton.addEventListener("click", this.handleNextClick);
-        this.backButton.addEventListener("click", this.handleBackClick);
+        this.nextButton!.addEventListener("click", this.handleNextClick);
+        this.backButton!.addEventListener("click", this.handleBackClick);
     }
 }
