@@ -15,10 +15,13 @@ class WebComponentLoader implements WebComponentLoaderInterface {
     private _webComponentTagNames: Array<string>;
     private _modulesDictionary: Record<string, ModuleDictionaryItem>;
 
-    public initModules() {
+    constructor() {
         this._modules = import.meta.glob('../../templates/**/*.ts');
         this._modulesDictionary = this.getModulesDictionary();
         this._webComponentTagNames = this.getActiveWebComponentTagNames();
+    }
+
+    public initModules() {
         this.mountWebComponents();
     }
 

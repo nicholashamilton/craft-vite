@@ -7,9 +7,8 @@
             "ESNext",
             "DOM"
         ],
-        // "moduleResolution": "Node",
-        "moduleResolution": "bundler",
-        // "strict": true,
+        "moduleResolution": "Node",
+        "strict": true,
         "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
@@ -27,7 +26,6 @@
         },
 
         // React
-        "allowImportingTsExtensions": true,
         "isolatedModules": true,
         "jsx": "react-jsx",
 
