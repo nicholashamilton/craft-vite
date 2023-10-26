@@ -15,3 +15,7 @@ node_modules
 !/storage/
 /storage/*
 !/storage/rebrand/
+
+# License
+/config/license.key
+/config/license.key.1
