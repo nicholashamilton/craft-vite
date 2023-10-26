@@ -6,9 +6,9 @@ export default class CardCarousel extends HTMLElement {
 
     constructor() {
         super();
-        this.nextButton = this.querySelector(".js-next");
-        this.backButton = this.querySelector(".js-back");
-        this.container = this.querySelector(".js-container");
+        this.nextButton = this.querySelector(".js-next")!;
+        this.backButton = this.querySelector(".js-back")!;
+        this.container = this.querySelector(".js-container")!;
         this.cardWidth = 320;
     }
 

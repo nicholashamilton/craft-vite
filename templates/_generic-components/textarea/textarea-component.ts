@@ -5,8 +5,8 @@ export default class TextareaComponent extends HTMLElement {
 
     constructor() {
         super();
-        this.input = this.querySelector("textarea");
-        this.textEl = this.querySelector("p");
+        this.input = this.querySelector("textarea")!;
+        this.textEl = this.querySelector("p")!;
         const errorEl = document.createElement("p");
         errorEl.className = "error";
         errorEl.style.display = "none";

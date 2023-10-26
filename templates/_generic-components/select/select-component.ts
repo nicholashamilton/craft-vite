@@ -4,7 +4,7 @@ export default class SelectComponent extends HTMLElement {
 
     constructor() {
         super();
-        this.select = this.querySelector("select");
+        this.select = this.querySelector("select")!;
         const errorEl = document.createElement("p");
         errorEl.className = "error";
         errorEl.style.display = "none";

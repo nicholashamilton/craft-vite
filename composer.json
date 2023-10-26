@@ -1,11 +1,11 @@
 {
     "require": {
-        "craftcms/cms": "4.5.3",
+        "craftcms/cms": "4.5.9",
         "craftcms/redactor": "3.0.4",
         "nicholashamilton/craft-preview-mate": "v1.0.1",
         "nystudio107/craft-vite": "4.0.6",
         "vaersaagod/matrixmate": "2.1.3",
-        "verbb/super-table": "3.0.9",
+        "verbb/super-table": "3.0.12",
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {
@@ -31,5 +31,12 @@
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
+        }
+    ]
 }

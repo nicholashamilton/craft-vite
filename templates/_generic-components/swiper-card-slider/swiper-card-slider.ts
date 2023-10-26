@@ -5,9 +5,9 @@ export default class SwiperCardSlider extends HTMLElement {
 
     constructor() {
         super();
-    }
 
-    private initSwiper = () => {
+        Swiper.use([Pagination]);
+
         this._swiper = new Swiper(this, {
             centeredSlides: false,
             pagination: {
@@ -25,10 +25,5 @@ export default class SwiperCardSlider extends HTMLElement {
                 },
             },
         });
-    }
-
-    connectedCallback() {
-        Swiper.use([Pagination]);
-        this.initSwiper();
     }
 }

@@ -5,8 +5,8 @@ export default class InputRange extends HTMLElement {
 
     constructor() {
         super();
-        this._slider = this.querySelector('input[type="range"]');
-        this._rangeMarker = this.querySelector('#range-marker');
+        this._slider = this.querySelector('input[type="range"]')!;
+        this._rangeMarker = this.querySelector('#range-marker')!;
     }
 
     public connectedCallback(): void {
@@ -18,7 +18,7 @@ export default class InputRange extends HTMLElement {
     }
 
     private updateRangeMarker(value: number, min: number, max: number): void {
-        const valueEl = this.querySelector('#value');
+        const valueEl = this.querySelector('#value')!;
         valueEl.innerHTML = this._slider.value;
 
         const newValue = Number((value - min) * 100 / (max - min));
