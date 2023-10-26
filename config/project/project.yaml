@@ -1,7 +1,11 @@
-dateModified: 1694190999
+dateModified: 1698297954
 email:
-  fromEmail: nicholashamilton.co@gmail.com
-  fromName: 'Headless Next'
+  fromEmail: $SYSTEM_EMAIL_ADDRESS
+  fromName: 'From Replace Me'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
