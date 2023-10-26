@@ -1,6 +1,6 @@
 export default class ImageSlider extends HTMLElement {
     private _slider: HTMLElement;
-    private _slides: Array<HTMLElement>;
+    private _slides: HTMLElement[];
     private _isDragging: boolean = false;
     private _startPos: number = 0;
     private _currentTranslate: number = 0;

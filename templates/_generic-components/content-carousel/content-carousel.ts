@@ -2,7 +2,7 @@ export default class ContentCarousel extends HTMLElement {
     private _carouselSlides: HTMLElement[];
     private _currentSlideIndex: number = 0;
     private _carouselControls: HTMLButtonElement[];
-    private _carouselContainer: HTMLElement | null;
+    private _carouselContainer: HTMLElement;
     private _isTransitioning: boolean = false;
 
     // Auto Timer
@@ -25,7 +25,7 @@ export default class ContentCarousel extends HTMLElement {
         super();
         this._carouselSlides = Array.from(this.querySelectorAll("carousel-slide"));
         this._carouselControls = Array.from(this.querySelectorAll("button.control"));
-        this._carouselContainer = this.querySelector('carousel-container');
+        this._carouselContainer = this.querySelector('carousel-container')!;
     }
 
     private handleControlClick: EventListener = (e: Event): void => {
@@ -61,7 +61,7 @@ export default class ContentCarousel extends HTMLElement {
         // Transition both slides
         this._carouselSlides[prevSlideIndex].style.transform = `translate3d(${100 * (direction * -1)}%, 0, 0)`;
         this._carouselSlides[newSlideIndex].style.transform = `translate3d(0, 0, 0)`;
-        this._carouselContainer!.style.height = `${this._carouselSlides[newSlideIndex].querySelector('slide-content')!.scrollHeight}px`;
+        this._carouselContainer.style.height = `${this._carouselSlides[newSlideIndex].querySelector('slide-content')!.scrollHeight}px`;
 
         // Transition Complete
         setTimeout(() => {

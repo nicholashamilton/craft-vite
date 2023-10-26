@@ -1,19 +1,19 @@
 export default class CardCarousel extends HTMLElement {
-    private nextButton: HTMLElement | null;
-    private backButton: HTMLElement | null;
-    private container: HTMLElement | null;
+    private nextButton: HTMLElement;
+    private backButton: HTMLElement;
+    private container: HTMLElement;
     private cardWidth: number;
 
     constructor() {
         super();
-        this.nextButton = this.querySelector(".js-next");
-        this.backButton = this.querySelector(".js-back");
-        this.container = this.querySelector(".js-container");
+        this.nextButton = this.querySelector(".js-next")!;
+        this.backButton = this.querySelector(".js-back")!;
+        this.container = this.querySelector(".js-container")!;
         this.cardWidth = 320;
     }
 
     private handleNextClick: EventListener = () => {
-        this.container!.scrollBy({
+        this.container.scrollBy({
             top: 0,
             left: this.cardWidth,
             behavior: "smooth",
@@ -21,7 +21,7 @@ export default class CardCarousel extends HTMLElement {
     };
 
     private handleBackClick: EventListener = () => {
-        this.container!.scrollBy({
+        this.container.scrollBy({
             top: 0,
             left: -this.cardWidth,
             behavior: "smooth",
@@ -29,7 +29,7 @@ export default class CardCarousel extends HTMLElement {
     };
 
     connectedCallback() {
-        this.nextButton!.addEventListener("click", this.handleNextClick);
-        this.backButton!.addEventListener("click", this.handleBackClick);
+        this.nextButton.addEventListener("click", this.handleNextClick);
+        this.backButton.addEventListener("click", this.handleBackClick);
     }
 }
