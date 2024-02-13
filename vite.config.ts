@@ -1,8 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
 import path from 'path';
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-
 export default defineConfig(({ command, mode }) => {
 
     // Load env file based on `mode` in the current working directory.
