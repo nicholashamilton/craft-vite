@@ -1,12 +1,16 @@
-dateModified: 1698297954
+dateModified: 1711496423
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
-  fromName: 'From Replace Me'
+  fromName: $SITE_NAME
   replyToEmail: null
   template: ''
   transportSettings:
-    command: '/usr/sbin/sendmail -bs'
-  transportType: craft\mail\transportadapters\Sendmail
+    host: $SMTP_HOSTNAME
+    password: ''
+    port: $SMTP_PORT
+    useAuthentication: '0'
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
     4d325bb5-d99a-4266-9eac-a8d44c501ddf: 'Text Alignment' # Text Alignment
@@ -18,6 +22,7 @@ meta:
     74b9b88d-409e-4fdc-ae82-fcd11384a7ac: 'Background Image' # Background Image
     290a0c6b-f5e6-45ef-bb53-5a0518dd6027: Copy # Copy
     7421f819-5214-4079-9453-cdcd183975ed: 'Rich Text' # Rich Text
+    73518614-e45b-4be2-8f81-aa825b55bec7: Simple # Simple
     92347230-7cd7-459c-95c6-f5797f9f01f8: Default # Default
     a8b08698-3388-49f6-b747-8edb811dc108: Copy # Copy
     b4961f27-57e0-47eb-af58-64ea23beec4a: Heading # Heading
@@ -27,6 +32,10 @@ meta:
     edf10d2e-0ce3-4149-9d10-f6fa278d1aa6: Heading # Heading
     fdbfc807-7ac7-4c48-bdf5-a87b54757f92: 'Blocks Builder' # Blocks Builder
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   matrixmate:
     edition: standard
     enabled: true
