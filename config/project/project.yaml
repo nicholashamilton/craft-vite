@@ -1,4 +1,4 @@
-dateModified: 1711496423
+dateModified: 1711496821
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -44,10 +44,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   super-table:
     edition: standard
     enabled: true
