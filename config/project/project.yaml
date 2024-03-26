@@ -1,12 +1,16 @@
-dateModified: 1698297954
+dateModified: 1711496207
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
-  fromName: 'From Replace Me'
+  fromName: $SITE_NAME
   replyToEmail: null
   template: ''
   transportSettings:
-    command: '/usr/sbin/sendmail -bs'
-  transportType: craft\mail\transportadapters\Sendmail
+    host: $SMTP_HOSTNAME
+    password: ''
+    port: $SMTP_PORT
+    useAuthentication: '0'
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
     4d325bb5-d99a-4266-9eac-a8d44c501ddf: 'Text Alignment' # Text Alignment
