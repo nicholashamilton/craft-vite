@@ -1,7 +1,7 @@
 # CraftCMS + Vite Boilerplate
 
 ### Roadmap
-- [x] CraftCMS 4 + PHP 8.2
+- [x] CraftCMS 5 + PHP 8.2
 - [x] Vite ⚡
 - [x] TypeScript | ES Modules
 - [x] Tailwind | SCSS
