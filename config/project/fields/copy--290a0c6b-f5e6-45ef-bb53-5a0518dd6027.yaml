@@ -1,0 +1,21 @@
+columnSuffix: wayfykkv
+handle: copy
+instructions: null
+name: 'Blocks Builder - Rich Text - Copy'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  ckeConfig: 73518614-e45b-4be2-8f81-aa825b55bec7 # Simple
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,4 +1,4 @@
-dateModified: 1711496821
+dateModified: 1711509183
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -13,33 +13,23 @@ email:
   transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
-    4d325bb5-d99a-4266-9eac-a8d44c501ddf: 'Text Alignment' # Text Alignment
+    4d325bb5-d99a-4266-9eac-a8d44c501ddf: 'Blocks Builder - Rich Text - Text Alignment' # Blocks Builder - Rich Text - Text Alignment
     6a569bef-febb-4b6b-857f-97a1358759b1: 'Craft Vite' # Craft Vite
-    10d177cd-febb-4bde-be18-72958a8d0eba: Slide # Slide
     19a16f46-bb2d-43e5-ae2c-967059d41288: 'Craft Vite' # Craft Vite
-    60bf332d-1f89-495c-94d8-b8efb637840e: 'Page Builder' # Page Builder
-    67fa8d96-3b70-4fdc-b773-e2bfa684de30: 'Block Width' # Block Width
-    74b9b88d-409e-4fdc-ae82-fcd11384a7ac: 'Background Image' # Background Image
-    290a0c6b-f5e6-45ef-bb53-5a0518dd6027: Copy # Copy
+    67fa8d96-3b70-4fdc-b773-e2bfa684de30: 'Blocks Builder - Rich Text - Block Width' # Blocks Builder - Rich Text - Block Width
+    290a0c6b-f5e6-45ef-bb53-5a0518dd6027: 'Blocks Builder - Rich Text - Copy' # Blocks Builder - Rich Text - Copy
     7421f819-5214-4079-9453-cdcd183975ed: 'Rich Text' # Rich Text
     73518614-e45b-4be2-8f81-aa825b55bec7: Simple # Simple
     92347230-7cd7-459c-95c6-f5797f9f01f8: Default # Default
-    a8b08698-3388-49f6-b747-8edb811dc108: Copy # Copy
-    b4961f27-57e0-47eb-af58-64ea23beec4a: Heading # Heading
     be626170-6d2a-4baf-9f4e-b9b062fc0092: Pages # Pages
-    dd19649c-bb86-4c78-8857-6f84d79f1064: Common # Common
     e73cc16d-5c7e-41cc-82a9-066ae653fe51: 'Public Schema' # Public Schema
-    edf10d2e-0ce3-4149-9d10-f6fa278d1aa6: Heading # Heading
+    edf10d2e-0ce3-4149-9d10-f6fa278d1aa6: 'Blocks Builder - Rich Text - Heading' # Blocks Builder - Rich Text - Heading
     fdbfc807-7ac7-4c48-bdf5-a87b54757f92: 'Blocks Builder' # Blocks Builder
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
-  matrixmate:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   preview-mate:
     edition: standard
     enabled: true
@@ -47,7 +37,7 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0
+    schemaVersion: 4.0.0
   vite:
     edition: standard
     enabled: true
@@ -57,7 +47,7 @@ system:
   live: true
   name: 'Craft Vite'
   retryDuration: null
-  schemaVersion: 4.5.3.0
+  schemaVersion: 5.0.0.20
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

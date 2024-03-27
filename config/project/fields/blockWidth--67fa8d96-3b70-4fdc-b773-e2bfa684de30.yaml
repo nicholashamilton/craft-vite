@@ -1,0 +1,65 @@
+columnSuffix: efnehrwq
+handle: blockWidth
+instructions: null
+name: 'Blocks Builder - Rich Text - Block Width'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 100%
+        -
+          - value
+          - column-12
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 50%
+        -
+          - value
+          - column-6
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 33.33%
+        -
+          - value
+          - column-4
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 25%
+        -
+          - value
+          - column-3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 66.66%
+        -
+          - value
+          - column-8
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
