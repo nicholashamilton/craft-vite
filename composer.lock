@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0974d6f4e496bee7c0333cb09ead409",
+    "content-hash": "d5c047a6667e18d94b7d9afc8ed24f67",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1514,11 +1514,11 @@
         },
         {
             "name": "nicholashamilton/craft-preview-mate",
-            "version": "v2.0.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicholashamilton/craft-preview-mate/zipball/127f67e320f637da57718e7101637074810f5861",
-                "reference": "127f67e320f637da57718e7101637074810f5861",
+                "url": "https://api.github.com/repos/nicholashamilton/craft-preview-mate/zipball/6d1caa829ee041f50514f33795ae14b557496889",
+                "reference": "6d1caa829ee041f50514f33795ae14b557496889",
                 "shasum": ""
             },
             "require": {
@@ -1564,7 +1564,7 @@
                 "docs": "https://github.com/nicholashamilton/craft-preview-mate/blob/master/README.md",
                 "issues": "https://github.com/nicholashamilton/craft-preview-mate/issues"
             },
-            "time": "2024-03-27T02:39:42+00:00"
+            "time": "2024-03-27T02:56:36+00:00"
         },
         {
             "name": "nystudio107/craft-code-editor",
@@ -5375,8 +5375,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
+    "minimum-stability": "beta",
+    "stability-flags": {
+        "nystudio107/craft-vite": 10,
+        "verbb/super-table": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
@@ -5384,5 +5387,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
