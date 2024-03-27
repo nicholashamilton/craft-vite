@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 92347230-7cd7-459c-95c6-f5797f9f01f8 # Default
 handle: pages
 name: Pages
 previewTargets:

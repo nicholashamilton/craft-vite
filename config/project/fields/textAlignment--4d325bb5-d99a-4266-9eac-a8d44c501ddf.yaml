@@ -1,0 +1,54 @@
+columnSuffix: bjvwdhuv
+handle: textAlignment
+instructions: null
+name: 'Blocks Builder - Rich Text - Text Alignment'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - text-left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Center
+        -
+          - value
+          - text-center
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Right
+        -
+          - value
+          - text-right
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Justify
+        -
+          - value
+          - text-justify
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
