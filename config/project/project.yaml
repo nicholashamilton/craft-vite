@@ -1,4 +1,4 @@
-dateModified: 1711497427
+dateModified: 1711497563
 email:
   fromEmail: $SYSTEM_EMAIL_ADDRESS
   fromName: $SITE_NAME
@@ -15,17 +15,13 @@ meta:
   __names__:
     4d325bb5-d99a-4266-9eac-a8d44c501ddf: 'Text Alignment' # Text Alignment
     6a569bef-febb-4b6b-857f-97a1358759b1: 'Craft Vite' # Craft Vite
-    10d177cd-febb-4bde-be18-72958a8d0eba: Slide # Slide
     19a16f46-bb2d-43e5-ae2c-967059d41288: 'Craft Vite' # Craft Vite
     60bf332d-1f89-495c-94d8-b8efb637840e: 'Page Builder' # Page Builder
     67fa8d96-3b70-4fdc-b773-e2bfa684de30: 'Block Width' # Block Width
-    74b9b88d-409e-4fdc-ae82-fcd11384a7ac: 'Background Image' # Background Image
     290a0c6b-f5e6-45ef-bb53-5a0518dd6027: Copy # Copy
     7421f819-5214-4079-9453-cdcd183975ed: 'Rich Text' # Rich Text
     73518614-e45b-4be2-8f81-aa825b55bec7: Simple # Simple
     92347230-7cd7-459c-95c6-f5797f9f01f8: Default # Default
-    a8b08698-3388-49f6-b747-8edb811dc108: Copy # Copy
-    b4961f27-57e0-47eb-af58-64ea23beec4a: Heading # Heading
     be626170-6d2a-4baf-9f4e-b9b062fc0092: Pages # Pages
     dd19649c-bb86-4c78-8857-6f84d79f1064: Common # Common
     e73cc16d-5c7e-41cc-82a9-066ae653fe51: 'Public Schema' # Public Schema
