@@ -6,7 +6,7 @@ name: 'Blocks Builder'
 searchable: false
 settings:
   entryTypes:
-    - 7421f819-5214-4079-9453-cdcd183975ed
+    - 7421f819-5214-4079-9453-cdcd183975ed # Rich Text
   maxEntries: null
   minEntries: null
   propagationKeyFormat: null

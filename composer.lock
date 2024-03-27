@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77b1033ed28862256ea046cf20152659",
+    "content-hash": "b0974d6f4e496bee7c0333cb09ead409",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1511,6 +1511,60 @@
                 "psr-3"
             ],
             "time": "2023-10-27T15:32:31+00:00"
+        },
+        {
+            "name": "nicholashamilton/craft-preview-mate",
+            "version": "v2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nicholashamilton/craft-preview-mate/zipball/127f67e320f637da57718e7101637074810f5861",
+                "reference": "127f67e320f637da57718e7101637074810f5861",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0",
+                "php": "^8.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "PreviewMate",
+                "handle": "preview-mate",
+                "developer": "Nicholas Hamilton",
+                "developerUrl": "https://github.com/nicholashamilton",
+                "documentationUrl": "https://github.com/nicholashamilton/craft-preview-mate/blob/master/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nicholashamilton/craft-preview-mate/master/CHANGELOG.md",
+                "components": {
+                    "previewMateService": "nicholashamilton\\previewmate\\services\\PreviewMateService"
+                },
+                "class": "nicholashamilton\\previewmate\\PreviewMate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nicholashamilton\\previewmate\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicholas Hamilton",
+                    "homepage": "https://github.com/nicholashamilton"
+                }
+            ],
+            "description": "CraftCMS matrix tools for Live Preview.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "previewmate"
+            ],
+            "support": {
+                "docs": "https://github.com/nicholashamilton/craft-preview-mate/blob/master/README.md",
+                "issues": "https://github.com/nicholashamilton/craft-preview-mate/issues"
+            },
+            "time": "2024-03-27T02:39:42+00:00"
         },
         {
             "name": "nystudio107/craft-code-editor",
@@ -5330,5 +5384,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
